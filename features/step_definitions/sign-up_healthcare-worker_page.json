@@ -1,0 +1,231 @@
+{
+  "null_address": {
+    "basic": [
+      {
+        "score": 196,
+        "css": "internal:text=\"Address\"s >> xpath=..",
+        "priority": 1
+      }
+    ],
+    "no_text": [
+      {
+        "css": "div:nth-child(2) > div > div > div > div > div >> nth=0",
+        "priority": 3
+      },
+      {
+        "css": "div.sc-AxjAm.gzMtyO > div.sc-AxjAm.sc-AxirZ.kdTcmO > div.sc-AxjAm.sc-AxirZ.GhUoa",
+        "priority": 3
+      },
+      {
+        "css": ".gzMtyO .GhUoa"
+      },
+      {
+        "css": "div.sc-AxjAm.gzMtyO > div.sc-AxjAm.sc-AxirZ.kdTcmO > div.sc-AxjAm.sc-AxirZ.GhUoa"
+      },
+      {
+        "css": ":root > :nth-child(2) > :nth-child(1) > :nth-child(1) > :nth-child(3) > :nth-child(1) > :nth-child(3) > :nth-child(2) > :nth-child(1) > :nth-child(1) > :nth-child(1) > :nth-child(1) > :nth-child(1)"
+      }
+    ],
+    "ignore_digit": [],
+    "context": [],
+    "strategy": "basic"
+  },
+  "textbox_first_name": {
+    "basic": [
+      {
+        "score": 121,
+        "css": "internal:label=\"First Name\"i",
+        "priority": 1
+      },
+      {
+        "score": 126,
+        "css": "internal:label=\"First Name\"s",
+        "priority": 1
+      },
+      {
+        "score": 142,
+        "css": "internal:role=textbox[name=\"First Name\"i]",
+        "priority": 1
+      },
+      {
+        "score": 147,
+        "css": "internal:role=textbox[name=\"First Name\"s]",
+        "priority": 1
+      }
+    ],
+    "no_text": [],
+    "ignore_digit": [],
+    "context": [],
+    "strategy": "basic"
+  },
+  "textbox_last_name": {
+    "basic": [
+      {
+        "score": 121,
+        "css": "internal:label=\"Last Name\"i",
+        "priority": 1
+      },
+      {
+        "score": 126,
+        "css": "internal:label=\"Last Name\"s",
+        "priority": 1
+      },
+      {
+        "score": 142,
+        "css": "internal:role=textbox[name=\"Last Name\"i]",
+        "priority": 1
+      },
+      {
+        "score": 147,
+        "css": "internal:role=textbox[name=\"Last Name\"s]",
+        "priority": 1
+      }
+    ],
+    "no_text": [],
+    "ignore_digit": [],
+    "context": [],
+    "strategy": "basic"
+  },
+  "textbox_address": {
+    "basic": [
+      {
+        "score": 126,
+        "css": "internal:label=\"Address\"s",
+        "priority": 1
+      },
+      {
+        "score": 147,
+        "css": "internal:role=textbox[name=\"Address\"s]",
+        "priority": 1
+      }
+    ],
+    "no_text": [],
+    "ignore_digit": [],
+    "context": [],
+    "strategy": "basic"
+  },
+  "link_london_uk": {
+    "basic": [
+      {
+        "css": "internal:role=link[name=\"London, UK\"s]",
+        "priority": 1
+      },
+      {
+        "score": 186,
+        "css": "internal:text=\"London, UK\"s",
+        "priority": 1
+      },
+      {
+        "score": 390.5,
+        "css": "a >> internal:has-text=/^London, UK$/",
+        "priority": 1
+      }
+    ],
+    "no_text": [
+      {
+        "css": "div.sc-AxjAm.kyxHCG > a.sc-fzqARJ.kOIvlT:nth-child(4)"
+      },
+      {
+        "css": ":root > :nth-child(2) > :nth-child(21) > :nth-child(1) > :nth-child(1) > :nth-child(1) > :nth-child(4)"
+      }
+    ],
+    "ignore_digit": [],
+    "context": [],
+    "strategy": "basic"
+  },
+  "null_choose_your_profession": {
+    "basic": [
+      {
+        "css": "internal:text=\"Choose your Profession\"i",
+        "priority": 1
+      },
+      {
+        "score": 187,
+        "css": "internal:text=\"Choose your Profession\"s",
+        "priority": 1
+      }
+    ],
+    "no_text": [
+      {
+        "css": "div.sc-AxjAm.gvihzL > div.sc-AxjAm.sc-AxirZ.deTBZS:nth-child(3) > div.sc-AxjAm.fNEhOV > div.sc-AxjAm.sc-AxirZ.kdTcmO > div.sc-AxjAm.jpHuWE > div.sc-fzpjYC.jbpobI > div > div:nth-child(1) > div:nth-child(1)",
+        "priority": 3
+      },
+      {
+        "css": "div.sc-AxjAm.gvihzL > div.sc-AxjAm.sc-AxirZ.deTBZS:nth-child(3) > div.sc-AxjAm.fNEhOV > div.sc-AxjAm.sc-AxirZ.kdTcmO > div.sc-AxjAm.jpHuWE > div.sc-fzpjYC.jbpobI > div > div:nth-child(1) > div:nth-child(1)"
+      },
+      {
+        "css": ":root > :nth-child(2) > :nth-child(1) > :nth-child(1) > :nth-child(3) > :nth-child(1) > :nth-child(3) > :nth-child(3) > :nth-child(1) > :nth-child(1) > :nth-child(2) > :nth-child(1) > :nth-child(1) > :nth-child(1) > :nth-child(1)"
+      }
+    ],
+    "ignore_digit": [],
+    "context": [],
+    "strategy": "basic"
+  },
+  "null_contact_lens_optician": {
+    "basic": [
+      {
+        "css": "internal:text=\"Contact Lens Optician\"s",
+        "priority": 1
+      },
+      {
+        "score": 391,
+        "css": "div >> internal:has-text=/^Contact Lens Optician$/",
+        "priority": 1
+      }
+    ],
+    "no_text": [
+      {
+        "css": "div.sc-AxjAm.gvihzL > div.sc-AxjAm.sc-AxirZ.deTBZS:nth-child(3) > div.sc-AxjAm.fNEhOV > div.sc-AxjAm.sc-AxirZ.kdTcmO > div.sc-AxjAm.jpHuWE > div.sc-fzpjYC.jbpobI > div:nth-child(3) > div > div:nth-child(3)",
+        "priority": 3
+      },
+      {
+        "css": "div.sc-AxjAm.gvihzL > div.sc-AxjAm.sc-AxirZ.deTBZS:nth-child(3) > div.sc-AxjAm.fNEhOV > div.sc-AxjAm.sc-AxirZ.kdTcmO > div.sc-AxjAm.jpHuWE > div.sc-fzpjYC.jbpobI > div:nth-child(3) > div > div:nth-child(3)"
+      },
+      {
+        "css": ":root > :nth-child(2) > :nth-child(1) > :nth-child(1) > :nth-child(3) > :nth-child(1) > :nth-child(3) > :nth-child(3) > :nth-child(1) > :nth-child(1) > :nth-child(2) > :nth-child(1) > :nth-child(3) > :nth-child(1) > :nth-child(3)"
+      }
+    ],
+    "ignore_digit": [],
+    "context": [],
+    "strategy": "basic"
+  },
+  "button_get_started": {
+    "basic": [
+      {
+        "css": "internal:role=button[name=\"Get Started\"i]",
+        "priority": 1
+      },
+      {
+        "score": 147,
+        "css": "internal:role=button[name=\"Get Started\"s]",
+        "priority": 1
+      },
+      {
+        "score": 186,
+        "css": "internal:text=\"Get Started\"s",
+        "priority": 1
+      },
+      {
+        "score": 355.5,
+        "css": "button >> internal:has-text=\"Get Started\"i",
+        "priority": 1
+      },
+      {
+        "score": 390.5,
+        "css": "button >> internal:has-text=/^Get Started$/",
+        "priority": 1
+      }
+    ],
+    "no_text": [
+      {
+        "css": "button"
+      },
+      {
+        "css": "[type='button']"
+      }
+    ],
+    "ignore_digit": [],
+    "context": [],
+    "strategy": "basic"
+  }
+}

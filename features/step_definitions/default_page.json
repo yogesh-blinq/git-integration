@@ -1,0 +1,110 @@
+{
+  "button_accept_all": {
+    "basic": [
+      {
+        "css": "internal:role=button[name=\"Accept All\"i] >> nth=1",
+        "priority": 3
+      },
+      {
+        "css": "body > div.overlay:nth-child(7) > div.cookieWrapper > div.cookieInner > div.btnDiv.cookieConsentBtnWrapper > form[role=\"form\"] > button[name=\"consentPreference\"]:nth-child(3)",
+        "priority": 3
+      }
+    ],
+    "no_text": [
+      {
+        "css": ":root > :nth-child(2) > :nth-child(7) > :nth-child(1) > :nth-child(2) > :nth-child(2) > :nth-child(1) > :nth-child(3)"
+      },
+      {
+        "css": "body > div.overlay:nth-child(7) > div.cookieWrapper > div.cookieInner > div.btnDiv.cookieConsentBtnWrapper > form[role=\"form\"] > button[name=\"consentPreference\"]:nth-child(3)"
+      }
+    ],
+    "ignore_digit": [],
+    "context": [],
+    "strategy": "basic"
+  },
+  "button_get_started": {
+    "basic": [
+      {
+        "css": "internal:role=button[name=\"Get Started\"s]",
+        "priority": 1
+      }
+    ],
+    "no_text": [
+      {
+        "css": "button.btn-whiteStyling",
+        "priority": 3
+      },
+      {
+        "css": ".btn-whiteStyling"
+      },
+      {
+        "css": "button.btn-whiteStyling"
+      },
+      {
+        "css": "[href='\\/sign-up\\/get-started'] button"
+      }
+    ],
+    "ignore_digit": [],
+    "context": [],
+    "strategy": "basic"
+  },
+  "link_get_started_as_a_healthcare_worker": {
+    "basic": [
+      {
+        "css": "internal:role=link[name=\"Get started as a Healthcare\"i]",
+        "priority": 1
+      },
+      {
+        "score": 144,
+        "css": "internal:role=link[name=\"Get started as a Healthcare Worker\"i]",
+        "priority": 1
+      },
+      {
+        "score": 149,
+        "css": "internal:role=link[name=\"Get started as a Healthcare Worker\"s]",
+        "priority": 1
+      },
+      {
+        "score": 192,
+        "css": "internal:text=\"Get started as a Healthcare\"i >> xpath=..",
+        "priority": 1
+      },
+      {
+        "score": 193,
+        "css": "internal:text=\"Get started as a Healthcare Worker\"i >> xpath=..",
+        "priority": 1
+      },
+      {
+        "score": 198,
+        "css": "internal:text=\"Get started as a Healthcare Worker\"s >> xpath=..",
+        "priority": 1
+      },
+      {
+        "score": 356,
+        "css": "a >> internal:has-text=\"Get started as a Healthcare\"i",
+        "priority": 1
+      },
+      {
+        "score": 356.5,
+        "css": "a >> internal:has-text=\"Get started as a Healthcare Worker\"i",
+        "priority": 1
+      },
+      {
+        "score": 391.5,
+        "css": "a >> internal:has-text=/^Get started as a Healthcare Worker$/",
+        "priority": 1
+      }
+    ],
+    "no_text": [
+      {
+        "css": "[href='\\/sign-up\\/healthcare-worker']"
+      },
+      {
+        "css": "div.sc-AxjAm.sc-AxirZ.gFxLju > div.sc-AxjAm.sc-AxirZ.fTnQnu:nth-child(1) > div.sc-AxjAm.jpHuWE > a"
+      }
+    ],
+    "ignore_digit": [],
+    "context": [],
+    "strategy": "basic"
+  }
+}
