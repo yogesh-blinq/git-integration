@@ -63,6 +63,33 @@ const elements = {
     ],
     element_name: "Login button",
   },
+  textbox_username_2: {
+    locators: [
+      { role: ["textbox", { name: "Username *" }] },
+      { strategy: "ROLE_NAME", css: 'internal:role=textbox[name="Username"i]' },
+      { strategy: "ROLE_NAME", css: 'internal:role=textbox[name="Username"s]' },
+      { strategy: "ID", css: "#username", priority: 1 },
+      { strategy: "NAME", css: 'internal:attr=[name="username"i]', priority: 1 },
+    ],
+    element_name: "Username field",
+  },
+  textbox_password_2: {
+    locators: [
+      { role: ["textbox", { name: "Password *" }] },
+      { strategy: "ROLE_NAME", css: 'internal:role=textbox[name="Password"i]' },
+      { strategy: "ROLE_NAME", css: 'internal:role=textbox[name="Password"s]' },
+      { strategy: "ID", css: "#{password}word", priority: 1, parameterDependent: true },
+      { strategy: "NAME", css: 'internal:attr=[name="{password}word"i]', priority: 1, parameterDependent: true },
+    ],
+    element_name: "Password field",
+  },
+  button_login_2: {
+    locators: [
+      { strategy: "ROLE_NAME", css: 'internal:role=button[name="LOGIN"i]' },
+      { strategy: "ROLE_NAME", css: 'internal:role=button[name="LOGIN"s]' },
+    ],
+    element_name: "LOGIN",
+  },
 };
 
 let context = null;
@@ -127,3 +154,40 @@ Given(
   { timeout: 240000 },
   the_user_logs_in_with_username_username_and_password_password_1
 );
+
+/**
+ * user logs in with username "blinq)uuser" and password "pass"
+ * @param {string} _username  username
+ * @param {string} _password  password
+ * @ai
+ */
+async function user_logs_in_with_username_username_and_password_password(_username, _password) {
+  // source: ai
+  // implemented_at: 2025-03-26T08:45:47.489Z
+  const _params = { _username, _password };
+  // Fill Username field with "_username"
+  await context.stable.clickType(elements["textbox_username_2"], _username, false, _params, null, this);
+  // Fill Password field with "_password"
+  await context.stable.clickType(elements["textbox_password_2"], _password, false, _params, null, this);
+}
+
+When(
+  "user logs in with username {string} and password {string}",
+  { timeout: 180000 },
+  user_logs_in_with_username_username_and_password_password
+);
+
+/**
+ * user clicks on "Login"
+ * @param {string} _param_0  param 0
+ * @ai
+ */
+async function user_clicks_on_login(_param_0) {
+  // source: ai
+  // implemented_at: 2025-03-26T08:45:47.655Z
+  const _params = { _param_0 };
+  // Click on LOGIN
+  await context.stable.click(elements["button_login_2"], _params, null, this);
+}
+
+When("user clicks on {string}", { timeout: 120000 }, user_clicks_on_login);
