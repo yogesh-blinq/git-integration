@@ -53,6 +53,35 @@ const elements = {
     ],
     element_name: "Logout menuitem",
   },
+  button_add_to_cart_2: {
+    locators: [{ text: "{urban_backpack_description}", css: "button", climb: 3 }],
+    element_name: "Add to cart button",
+  },
+  button_add_to_cart_3: {
+    locators: [{ text: "{mizu_bottle_description_1}", css: "button", climb: 3 }],
+    element_name: "Add to cart button",
+  },
+  button_b_1: {
+    locators: [
+      { css: 'internal:role=button[name="B"i]', priority: 1 },
+      { css: 'internal:role=button[name="B"s]', priority: 1 },
+      { css: 'internal:text="B"s >> xpath=..', priority: 1 },
+      { css: 'button >> internal:has-text="B"i', priority: 1 },
+      { css: "button >> internal:has-text=/^B$/", priority: 1 },
+    ],
+    element_name: "B button",
+  },
+  menuitem_logout_1: {
+    locators: [
+      { css: 'internal:role=menuitem[name="Logout"i]', priority: 1 },
+      { css: 'internal:role=menuitem[name="Logout"s]', priority: 1 },
+      { css: 'internal:text="Logout"i', priority: 1 },
+      { css: 'internal:text="Logout"s', priority: 1 },
+      { css: 'li >> internal:has-text="Logout"i', priority: 1 },
+      { css: "li >> internal:has-text=/^Logout$/", priority: 1 },
+    ],
+    element_name: "Logout menuitem",
+  },
 };
 
 let context = null;
@@ -117,4 +146,40 @@ When(
   "The user logs out from the products page and navigates to the login page",
   { timeout: 120000 },
   the_user_logs_out_from_the_products_page_and_navigates_to_the_login_page
+);
+
+/**
+ * The user context clicks on "Add to cart" button in the context of "<urban_backpack_description>", "<mizu_bottle_description_1>", "<mizu_bottle_description_1>" and logs out
+ * @param {string} _param_0  param 0
+ * @param {string} _urban_backpack_description  urban backpack description
+ * @param {string} _mizu_bottle_description_1  mizu bottle description 1
+ * @param {string} _mizu_bottle_description_11  mizu bottle description 11
+ * @recorder
+ * @path=/products
+ */
+async function the_user_context_clicks_on_add_to_cart_button_in_the_context_of_urban_backpack_description_mizu_bottle_description_1_mizu_bottle_description_1_and_logs_out(
+  _param_0,
+  _urban_backpack_description,
+  _mizu_bottle_description_1,
+  _mizu_bottle_description_11
+) {
+  // source: recorder
+  // implemented_at: 2025-03-26T08:18:57.615Z
+  const _params = { _param_0, _urban_backpack_description, _mizu_bottle_description_1, _mizu_bottle_description_11 };
+  //  Click on button_add_to_cart_2 in the context of <urban_backpack_description>
+  await context.stable.click(elements["button_add_to_cart_2"], _params, { context: _urban_backpack_description }, this);
+  //  Click on button_add_to_cart_3 in the context of <mizu_bottle_description_1>
+  await context.stable.click(elements["button_add_to_cart_3"], _params, { context: _mizu_bottle_description_1 }, this);
+  //  Click on button_add_to_cart_3 in the context of <mizu_bottle_description_1>
+  await context.stable.click(elements["button_add_to_cart_3"], _params, { context: _mizu_bottle_description_1 }, this);
+  // Click on B button
+  await context.stable.click(elements["button_b_1"], _params, null, this);
+  // Click on Logout menuitem
+  await context.stable.click(elements["menuitem_logout_1"], _params, null, this);
+}
+
+When(
+  "The user context clicks on {string} button in the context of {string}, {string}, {string} and logs out",
+  { timeout: 300000 },
+  the_user_context_clicks_on_add_to_cart_button_in_the_context_of_urban_backpack_description_mizu_bottle_description_1_mizu_bottle_description_1_and_logs_out
 );

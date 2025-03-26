@@ -197,5 +197,117 @@
     "ignore_digit": [],
     "context": [],
     "strategy": "basic"
+  },
+  "button_add_to_cart_2": {
+    "basic": [
+      {
+        "text": "{urban_backpack_description}",
+        "css": "button",
+        "climb": 3
+      }
+    ],
+    "no_text": [],
+    "ignore_digit": [],
+    "context": [],
+    "strategy": "basic"
+  },
+  "button_add_to_cart_3": {
+    "basic": [
+      {
+        "text": "{mizu_bottle_description_1}",
+        "css": "button",
+        "climb": 3
+      }
+    ],
+    "no_text": [],
+    "ignore_digit": [],
+    "context": [],
+    "strategy": "basic"
+  },
+  "button_b_1": {
+    "basic": [
+      {
+        "css": "internal:role=button[name=\"B\"i]",
+        "priority": 1
+      },
+      {
+        "score": 146,
+        "css": "internal:role=button[name=\"B\"s]",
+        "priority": 1
+      },
+      {
+        "score": 195,
+        "css": "internal:text=\"B\"s >> xpath=..",
+        "priority": 1
+      },
+      {
+        "score": 355,
+        "css": "button >> internal:has-text=\"B\"i",
+        "priority": 1
+      },
+      {
+        "score": 390,
+        "css": "button >> internal:has-text=/^B$/",
+        "priority": 1
+      }
+    ],
+    "no_text": [
+      {
+        "css": "header [tabindex]"
+      },
+      {
+        "css": ".MuiToolbar-root [tabindex]"
+      },
+      {
+        "css": "div.MuiToolbar-root.MuiToolbar-regular > div.MuiBox-root:nth-child(3) > button.MuiButtonBase-root.MuiIconButton-root.MuiIconButton-sizeMedium"
+      }
+    ],
+    "ignore_digit": [],
+    "context": [],
+    "strategy": "basic"
+  },
+  "menuitem_logout_1": {
+    "basic": [
+      {
+        "css": "internal:role=menuitem[name=\"Logout\"i]",
+        "priority": 1
+      },
+      {
+        "score": 147,
+        "css": "internal:role=menuitem[name=\"Logout\"s]",
+        "priority": 1
+      },
+      {
+        "score": 180,
+        "css": "internal:text=\"Logout\"i",
+        "priority": 1
+      },
+      {
+        "score": 185,
+        "css": "internal:text=\"Logout\"s",
+        "priority": 1
+      },
+      {
+        "score": 355,
+        "css": "li >> internal:has-text=\"Logout\"i",
+        "priority": 1
+      },
+      {
+        "score": 390.5,
+        "css": "li >> internal:has-text=/^Logout$/",
+        "priority": 1
+      }
+    ],
+    "no_text": [
+      {
+        "css": "li"
+      },
+      {
+        "css": "[role='menuitem']"
+      }
+    ],
+    "ignore_digit": [],
+    "context": [],
+    "strategy": "basic"
   }
 }
