@@ -1,0 +1,75 @@
+{
+  "textbox_verification_code": {
+    "basic": [
+      {
+        "css": "internal:label=\"Verification Code\"i",
+        "priority": 1
+      },
+      {
+        "score": 127,
+        "css": "internal:label=\"Verification Code\"s",
+        "priority": 1
+      },
+      {
+        "score": 143,
+        "css": "internal:role=textbox[name=\"Verification Code\"i]",
+        "priority": 1
+      },
+      {
+        "score": 148,
+        "css": "internal:role=textbox[name=\"Verification Code\"s]",
+        "priority": 1
+      }
+    ],
+    "no_text": [],
+    "ignore_digit": [],
+    "context": [],
+    "strategy": "basic"
+  },
+  "button_verify": {
+    "basic": [
+      {
+        "css": "internal:role=button[name=\"Verify\"i]",
+        "priority": 1
+      },
+      {
+        "score": 147,
+        "css": "internal:role=button[name=\"Verify\"s]",
+        "priority": 1
+      },
+      {
+        "score": 185,
+        "css": "internal:text=\"Verify\"s",
+        "priority": 1
+      },
+      {
+        "score": 355,
+        "css": "input >> internal:has-text=\"Verify\"i",
+        "priority": 1
+      },
+      {
+        "score": 390.5,
+        "css": "input >> internal:has-text=/^Verify$/",
+        "priority": 1
+      }
+    ],
+    "no_text": [
+      {
+        "score": 201,
+        "css": "internal:attr=[title=\"Verify\"i]",
+        "priority": 1
+      },
+      {
+        "score": 206,
+        "css": "internal:attr=[title=\"Verify\"s]",
+        "priority": 1
+      },
+      {
+        "css": "#save"
+      }
+    ],
+    "ignore_digit": [],
+    "context": [],
+    "strategy": "basic"
+  }
+}

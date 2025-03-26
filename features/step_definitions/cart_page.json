@@ -1,39 +1,4 @@
 {
-  "button_add_product": {
-    "basic": [
-      {
-        "css": "li >> internal:has-text=\"KeyX 3000 - Mechanical\"i >> internal:label=\"add-product\"i",
-        "priority": 1
-      },
-      {
-        "css": "internal:text=\"KeyX 3000 - Mechanical Keyboard1$\"i >> internal:label=\"add-product\"i",
-        "priority": 2
-      },
-      {
-        "css": "internal:text=\"KeyX 3000 - Mechanical Keyboard1$\"i >> internal:label=\"add-product\"s",
-        "priority": 2
-      },
-      {
-        "css": "internal:text=\"KeyX 3000 - Mechanical Keyboard1$\"i >> internal:role=button[name=\"add-product\"i]",
-        "priority": 2
-      },
-      {
-        "css": "internal:text=\"KeyX 3000 - Mechanical Keyboard1$\"i >> internal:role=button[name=\"add-product\"s]",
-        "priority": 2
-      }
-    ],
-    "no_text": [
-      {
-        "css": ":root > :nth-child(2) > :nth-child(1) > :nth-child(1) > :nth-child(2) > :nth-child(1) > :nth-child(1) > :nth-child(2) > :nth-child(1) > :nth-child(5)"
-      },
-      {
-        "css": "ul > li.MuiListItem-root.MuiListItem-gutters.MuiListItem-padding:nth-child(1) > button.MuiButtonBase-root.MuiIconButton-root.MuiIconButton-sizeSmall[aria-label=\"add-product\"]"
-      }
-    ],
-    "ignore_digit": [],
-    "context": [],
-    "strategy": "basic"
-  },
   "button_checkout": {
     "basic": [
       {
@@ -176,53 +141,6 @@
       {
         "score": 355.5,
         "css": "button >> internal:has-text=\"Continue\"i",
-        "priority": 1
-      }
-    ],
-    "no_text": [
-      {
-        "css": ".MuiButton-root"
-      },
-      {
-        "css": "#root > div > div [tabindex]"
-      },
-      {
-        "css": "button.MuiButtonBase-root.MuiButton-root.MuiButton-contained.MuiButton-containedPrimary.MuiButton-sizeMedium.MuiButton-containedSizeMedium.MuiButton-fullWidth"
-      }
-    ],
-    "ignore_digit": [],
-    "context": [],
-    "strategy": "basic"
-  },
-  "button_back_home": {
-    "basic": [
-      {
-        "css": "internal:role=button[name=\"Back home\"i]",
-        "priority": 1
-      },
-      {
-        "score": 147,
-        "css": "internal:role=button[name=\"Back home\"s]",
-        "priority": 1
-      },
-      {
-        "score": 181,
-        "css": "internal:text=\"Back home\"i",
-        "priority": 1
-      },
-      {
-        "score": 186,
-        "css": "internal:text=\"Back home\"s",
-        "priority": 1
-      },
-      {
-        "score": 355.5,
-        "css": "button >> internal:has-text=\"Back home\"i",
-        "priority": 1
-      },
-      {
-        "score": 390.5,
-        "css": "button >> internal:has-text=/^Back home$/",
         "priority": 1
       }
     ],

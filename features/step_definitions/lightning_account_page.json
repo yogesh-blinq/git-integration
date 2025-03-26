@@ -1,0 +1,49 @@
+{
+  "textbox_account_name": {
+    "basic": [
+      {
+        "css": "internal:label=\"*Account Name\"i",
+        "priority": 1
+      },
+      {
+        "score": 126,
+        "css": "internal:label=\"*Account Name\"s",
+        "priority": 1
+      },
+      {
+        "score": 143,
+        "css": "internal:role=textbox[name=\"*Account Name\"i]",
+        "priority": 1
+      },
+      {
+        "score": 148,
+        "css": "internal:role=textbox[name=\"*Account Name\"s]",
+        "priority": 1
+      }
+    ],
+    "no_text": [],
+    "ignore_digit": [],
+    "context": [],
+    "strategy": "basic"
+  },
+  "button_save": {
+    "basic": [
+      {
+        "css": "internal:role=button[name=\"Save\"s]",
+        "priority": 1
+      },
+      {
+        "css": "button.slds-button.slds-button_brand[name=\"SaveEdit\"]",
+        "priority": 3
+      }
+    ],
+    "no_text": [
+      {
+        "css": "button.slds-button.slds-button_brand[name=\"SaveEdit\"]"
+      }
+    ],
+    "ignore_digit": [],
+    "context": [],
+    "strategy": "basic"
+  }
+}

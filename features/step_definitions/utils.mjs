@@ -97,3 +97,15 @@ async function resetBrowserSession(filePath) {
     await context.stable.restoreSaveState(filePath, this);
 }
 When("Reset browser session {string}", resetBrowserSession);
+
+/**
+ * Identify the text "<textAnchor>", climb "<climb>" levels in the page, validate text "<textToVerify>" can be found in the context
+ * @param {string} textAnchor the anchor text 
+ * @param {string} climb no of levels to climb up in the tree
+ * @param {string} textToVerify the target text to verify
+ * @protect
+ */
+async function verifyTextRelatedToText(textAnchor, climb, textToVerify){
+  await context.stable.verifyTextRelatedToText(textAnchor, climb, textToVerify, null, this)
+}
+Then("Identify the text {string}, climb {string} levels in the page, validate text {string} can be found in the context", verifyTextRelatedToText);

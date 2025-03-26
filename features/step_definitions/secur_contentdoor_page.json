@@ -1,0 +1,38 @@
+{
+  "link_accounts": {
+    "basic": [
+      {
+        "css": "internal:role=link[name=\"Accounts\"i]",
+        "priority": 1
+      },
+      {
+        "score": 147,
+        "css": "internal:role=link[name=\"Accounts\"s]",
+        "priority": 1
+      },
+      {
+        "score": 390.5,
+        "css": "a >> internal:has-text=/^Accounts$/",
+        "priority": 1
+      }
+    ],
+    "no_text": [
+      {
+        "score": 201,
+        "css": "internal:attr=[title=\"Accounts\"i]",
+        "priority": 1
+      },
+      {
+        "score": 206,
+        "css": "internal:attr=[title=\"Accounts\"s]",
+        "priority": 1
+      },
+      {
+        "css": "a.slds-context-bar__label-action.dndItem[title=\"Accounts\"]"
+      }
+    ],
+    "ignore_digit": [],
+    "context": [],
+    "strategy": "basic"
+  }
+}

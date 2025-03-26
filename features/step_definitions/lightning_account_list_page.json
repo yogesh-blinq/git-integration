@@ -1,0 +1,102 @@
+{
+  "button_favorites_list": {
+    "basic": [
+      {
+        "css": "internal:role=button[name=\"Favorites list\"i]",
+        "priority": 1
+      },
+      {
+        "score": 148,
+        "css": "internal:role=button[name=\"Favorites list\"s]",
+        "priority": 1
+      },
+      {
+        "score": 355.5,
+        "css": "button >> internal:has-text=\"Favorites list\"i",
+        "priority": 1
+      },
+      {
+        "score": 390.5,
+        "css": "button >> internal:has-text=/^Favorites list$/",
+        "priority": 1
+      }
+    ],
+    "no_text": [
+      {
+        "css": "[aria-haspopup='false']"
+      },
+      {
+        "css": "button.slds-button.branding-favorites-list-button.slds-button_icon.slds-global-actions__favorites-more.slds-button_icon-border.slds-button_icon-small"
+      }
+    ],
+    "ignore_digit": [],
+    "context": [],
+    "strategy": "basic"
+  },
+  "null_favorites_list": {
+    "basic": [
+      {
+        "css": "internal:text=\"Skip to NavigationSkip to\"i >> xpath=../../.. >> internal:text=\"Favorites list\"i",
+        "index": 1,
+        "priority": 2
+      },
+      {
+        "css": "internal:text=\"Skip to NavigationSkip to\"i >> xpath=../../.. >> internal:text=\"Favorites list\"s",
+        "index": 1,
+        "priority": 2
+      }
+    ],
+    "no_text": [
+      {
+        "css": "[id=\"tt-for-30\\:218\\;a-tt-adv\"]",
+        "priority": 1
+      },
+      {
+        "css": ".tooltip-advanced"
+      },
+      {
+        "css": "div.tooltip-advanced.tooltip-body.active"
+      },
+      {
+        "css": ":root > :nth-child(2) > :nth-child(21) > :nth-child(2) > :nth-child(1) > :nth-child(1) > :nth-child(2)"
+      }
+    ],
+    "ignore_digit": [],
+    "context": [],
+    "strategy": "basic"
+  },
+  "button_new": {
+    "basic": [
+      {
+        "css": "internal:role=button[name=\"New\"i]",
+        "priority": 1
+      },
+      {
+        "score": 146,
+        "css": "internal:role=button[name=\"New\"s]",
+        "priority": 1
+      },
+      {
+        "score": 195,
+        "css": "internal:text=\"New\"s >> xpath=..",
+        "priority": 1
+      },
+      {
+        "score": 390,
+        "css": "a >> internal:has-text=/^New$/",
+        "priority": 1
+      }
+    ],
+    "no_text": [
+      {
+        "css": "[href][title='New']"
+      },
+      {
+        "css": "a.forceActionLink[title=\"New\"][role=\"button\"]"
+      }
+    ],
+    "ignore_digit": [],
+    "context": [],
+    "strategy": "basic"
+  }
+}

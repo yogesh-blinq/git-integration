@@ -5,22 +5,6 @@ setDefaultTimeout(60 * 1000);
 const path = null;
 
 const elements = {
-  button_add_product: {
-    locators: [
-      { css: 'li >> internal:has-text="KeyX 3000 - Mechanical"i >> internal:label="add-product"i', priority: 1 },
-      { css: 'internal:text="KeyX 3000 - Mechanical Keyboard1$"i >> internal:label="add-product"i', priority: 2 },
-      { css: 'internal:text="KeyX 3000 - Mechanical Keyboard1$"i >> internal:label="add-product"s', priority: 2 },
-      {
-        css: 'internal:text="KeyX 3000 - Mechanical Keyboard1$"i >> internal:role=button[name="add-product"i]',
-        priority: 2,
-      },
-      {
-        css: 'internal:text="KeyX 3000 - Mechanical Keyboard1$"i >> internal:role=button[name="add-product"s]',
-        priority: 2,
-      },
-    ],
-    element_name: "add-product button",
-  },
   button_checkout: {
     locators: [
       { css: 'internal:role=button[name="Checkout"i]', priority: 1 },
@@ -67,17 +51,6 @@ const elements = {
     ],
     element_name: "Checkout button",
   },
-  button_back_home: {
-    locators: [
-      { css: 'internal:role=button[name="Back home"i]', priority: 1 },
-      { css: 'internal:role=button[name="Back home"s]', priority: 1 },
-      { css: 'internal:text="Back home"i', priority: 1 },
-      { css: 'internal:text="Back home"s', priority: 1 },
-      { css: 'button >> internal:has-text="Back home"i', priority: 1 },
-      { css: "button >> internal:has-text=/^Back home$/", priority: 1 },
-    ],
-    element_name: "Back home button",
-  },
 };
 
 let context = null;
@@ -92,39 +65,35 @@ After(async function () {
   context = null;
 });
 /**
- * The user adds a product to the cart, proceeds to checkout with first name "<first_name>", last name "<last_name>", zip code "<zip_code>", and navigates back home
+ * The user fills the shipping details with first name "<first_name>", last name "<last_name>", zip code "<last_name>" and proceeds to checkout
  * @param {string} _first_name  first name
  * @param {string} _last_name  last name
- * @param {string} _zip_code  zip code
+ * @param {string} _last_name1  last name1
  * @recorder
  * @path=/cart
  */
-async function the_user_adds_a_product_to_the_cart_proceeds_to_checkout_with_first_name_first_name_last_name_last_name_zip_code_zip_code_and_navigates_back_home(
+async function the_user_fills_the_shipping_details_with_first_name_first_name_last_name_last_name_zip_code_last_name_and_proceeds_to_checkout(
   _first_name,
   _last_name,
-  _zip_code
+  _last_name1
 ) {
   // source: recorder
-  // implemented_at: 2025-03-26T08:04:19.355Z
-  const _params = { _first_name, _last_name, _zip_code };
-  // Click on add-product button
-  await context.stable.click(elements["button_add_product"], _params, null, this);
+  // implemented_at: 2025-03-26T10:57:24.022Z
+  const _params = { _first_name, _last_name, _last_name1 };
   // Click on Checkout button
   await context.stable.click(elements["button_checkout"], _params, null, this);
   // Fill First name textbox with "_first_name"
   await context.stable.clickType(elements["textbox_first_name"], _first_name, false, _params, null, this);
   // Fill Last name textbox with "_last_name"
   await context.stable.clickType(elements["textbox_last_name"], _last_name, false, _params, null, this);
-  // Fill Zip/Postal code textbox with "_zip_code"
-  await context.stable.clickType(elements["textbox_zip_postal_code"], _zip_code, false, _params, null, this);
+  // Fill Zip/Postal code textbox with "_last_name"
+  await context.stable.clickType(elements["textbox_zip_postal_code"], _last_name, false, _params, null, this);
   // Click on Checkout button
   await context.stable.click(elements["button_checkout_1"], _params, null, this);
-  // Click on Back home button
-  await context.stable.click(elements["button_back_home"], _params, null, this);
 }
 
 When(
-  "The user adds a product to the cart, proceeds to checkout with first name {string}, last name {string}, zip code {string}, and navigates back home",
-  { timeout: 420000 },
-  the_user_adds_a_product_to_the_cart_proceeds_to_checkout_with_first_name_first_name_last_name_last_name_zip_code_zip_code_and_navigates_back_home
+  "The user fills the shipping details with first name {string}, last name {string}, zip code {string} and proceeds to checkout",
+  { timeout: 300000 },
+  the_user_fills_the_shipping_details_with_first_name_first_name_last_name_last_name_zip_code_last_name_and_proceeds_to_checkout
 );
