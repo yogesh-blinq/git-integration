@@ -12,4 +12,4 @@ Feature: qwe
       | \\"yogesh\\" | {{person.firstName()}} | \\"'yogesh' 'singh'\\" | Urban Backpack - Compact & Durable |
 
   @regression
-  Scenario Outline:
+  Scenario Outline: Untitled
