@@ -7,14 +7,14 @@
     },
     {
       "key": "pass",
-      "value": "U2FsdGVkX1+vmb+caVPA9oWDh7xT2g70q7+NHWKYoaY=",
+      "value": "U2FsdGVkX1+/8RE8XhMrVQwU7KYS8odCsyIE0nyr4nA=",
       "DataType": "secret"
     }
   ],
   "default": [
     {
       "key": "totp",
-      "value": "U2FsdGVkX19MM8n5ll/FGJdwN7Te4FU1EBQmSVhLJZ2tp0rGjJnkj5aM5+3onh5RXwIr+uDlou4KHeQBjLdyzQ==",
+      "value": "U2FsdGVkX1+5C8h+LapsPE/QiFyag9d8EeWJPC83nVg=",
       "DataType": "totp"
     }
   ]
