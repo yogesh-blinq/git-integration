@@ -1,3 +1,4 @@
 Feature: xfg
-	@regression
-	Scenario Outline:
+
+  @regression
+  Scenario Outline: Untitled
