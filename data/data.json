@@ -1,28 +1,9 @@
 {
   "*": [
     {
-      "key": "username",
-      "value": "blinq_user",
+      "key": "sdc",
+      "value": "sdc",
       "DataType": "string"
-    },
-    {
-      "key": "pass",
-      "value": "U2FsdGVkX1/Ol1zZRKU5MCqJQQasA4e4JHeWpVTASgY=",
-      "DataType": "secret"
-    }
-  ],
-  "default": [
-    {
-      "key": "totp",
-      "value": "U2FsdGVkX19iHqGWl4p44AhtmmVXA+BcG85l/mfyFpI=",
-      "DataType": "totp"
-    }
-  ],
-  "shop-blinq": [
-    {
-      "key": "dsafv",
-      "value": "U2FsdGVkX18s+2WTp99O1ufmAhFCKleYZhV0NO6KMA8=",
-      "DataType": "secret"
     }
   ]
 }

@@ -1,31 +1,40 @@
 {
   "commitId": {
-    "8b7bc9f22a33238e4c70b616bf5d8950362f769c": [
+    "66719dec5c66763be152c349e4fb6df247ac1c2f": [
       {
-        ".gitignore": 1743657665000
+        ".gitattributes": 1743674009000
       },
       {
-        "ai_config.json": 1743657665000
+        ".gitignore": 1743674009000
+      },
+      {
+        "LICENSE": 1743674009000
+      },
+      {
+        "ai_config.json": 1743674013000
       },
       {
         "environments": [
           {
-            ".gitkeep": 1743657665000
+            ".gitkeep": 1743674009000
           },
           {
-            "dev-remo.json": 1743657690000
+            "default.json": 1743674009000
           }
         ]
       },
       {
         "features": [
           {
-            ".gitkeep": 1743657665000
+            ".gitkeep": 1743674009000
+          },
+          {
+            "shop.feature": 1743674009000
           },
           {
             "step_definitions": [
               {
-                "utils.mjs": 1743657665000
+                "utils.mjs": 1743674013000
               }
             ]
           }

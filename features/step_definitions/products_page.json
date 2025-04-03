@@ -1,0 +1,69 @@
+{
+  "button_add_to_cart": {
+    "basic": [
+      {
+        "text": "{keyboard_product_name}",
+        "css": "button",
+        "climb": 3
+      }
+    ],
+    "no_text": [],
+    "ignore_digit": [],
+    "context": [],
+    "strategy": "basic"
+  },
+  "button_add_to_cart_1": {
+    "basic": [
+      {
+        "text": "{bottle_product_name}",
+        "css": "button",
+        "climb": 3
+      }
+    ],
+    "no_text": [],
+    "ignore_digit": [],
+    "context": [],
+    "strategy": "basic"
+  },
+  "button_go_to_cart": {
+    "basic": [
+      {
+        "css": "internal:label=\"Go to cart\"i",
+        "priority": 1
+      },
+      {
+        "score": 126,
+        "css": "internal:label=\"Go to cart\"s",
+        "priority": 1
+      },
+      {
+        "score": 142,
+        "css": "internal:role=button[name=\"Go to cart\"i]",
+        "priority": 1
+      },
+      {
+        "score": 147,
+        "css": "internal:role=button[name=\"Go to cart\"s]",
+        "priority": 1
+      },
+      {
+        "score": 390,
+        "css": "div >> internal:has-text=/^2$/",
+        "priority": 1
+      },
+      {
+        "score": 395,
+        "css": "internal:text=\"2\"s >> xpath=../..",
+        "priority": 1
+      }
+    ],
+    "no_text": [
+      {
+        "css": "#cart"
+      }
+    ],
+    "ignore_digit": [],
+    "context": [],
+    "strategy": "basic"
+  }
+}
