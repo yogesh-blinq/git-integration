@@ -5,32 +5,41 @@ setDefaultTimeout(60 * 1000);
 const path = null;
 
 const elements = {
-  textbox_username: {
+  null_username: {
     locators: [
-      { role: ["textbox", { name: "Username *" }] },
-      { strategy: "ROLE_NAME", css: 'internal:role=textbox[name="Username"i]' },
-      { strategy: "ROLE_NAME", css: 'internal:role=textbox[name="Username"s]' },
-      { strategy: "ID", css: "#username", priority: 1 },
-      { strategy: "NAME", css: 'internal:attr=[name="username"i]', priority: 1 },
+      { css: 'form div >> internal:has-text="Username *"i', priority: 1 },
+      { css: 'internal:text="Username *"i >> xpath=..', priority: 1 },
+      { css: 'internal:text="Username *"s >> xpath=..', priority: 1 },
     ],
-    element_name: "Username field",
+    element_name: "Username Text",
+  },
+  null_password: {
+    locators: [
+      { css: 'form div >> internal:has-text="Password *"i', priority: 1 },
+      { css: 'internal:text="Password *"i >> xpath=..', priority: 1 },
+      { css: 'internal:text="Password *"s >> xpath=..', priority: 1 },
+    ],
+    element_name: "Password Text",
   },
   textbox_password: {
     locators: [
-      { role: ["textbox", { name: "Password *" }] },
-      { strategy: "ROLE_NAME", css: 'internal:role=textbox[name="Password"i]' },
-      { strategy: "ROLE_NAME", css: 'internal:role=textbox[name="Password"s]' },
-      { strategy: "ID", css: "#{password}assword", priority: 1, parameterDependent: true },
-      { strategy: "NAME", css: 'internal:attr=[name="{password}assword"i]', priority: 1, parameterDependent: true },
+      { css: 'internal:label="Password *"i', priority: 1 },
+      { css: 'internal:label="Password *"s', priority: 1 },
+      { css: 'internal:role=textbox[name="Password"i]', priority: 1 },
+      { css: 'internal:role=textbox[name="Password"s]', priority: 1 },
     ],
-    element_name: "Password field",
+    element_name: "Password textbox",
   },
   button_login: {
     locators: [
-      { strategy: "ROLE_NAME", css: 'internal:role=button[name="LOGIN"i]' },
-      { strategy: "ROLE_NAME", css: 'internal:role=button[name="LOGIN"s]' },
+      { css: 'internal:role=button[name="Login"i]', priority: 1 },
+      { css: 'internal:role=button[name="Login"s]', priority: 1 },
+      { css: 'internal:text="Login"i', priority: 1 },
+      { css: 'internal:text="Login"s', priority: 1 },
+      { css: 'button >> internal:has-text="Login"i', priority: 1 },
+      { css: "button >> internal:has-text=/^Login$/", priority: 1 },
     ],
-    element_name: "LOGIN",
+    element_name: "Login button",
   },
 };
 
@@ -46,21 +55,30 @@ After(async function () {
   context = null;
 });
 /**
- * login with "Cheyanne_Conn" and "p"
- * @param {string} _username  username
- * @param {string} _password  password
- * @ai
+ * The user attempts to log in on the Shop BlinqIO page
+ * @recorder
+ * @path=/login
  */
-async function login_with_username_and_password(_username, _password) {
-  // source: ai
-  // implemented_at: 2025-04-03T18:49:39.854Z
-  const _params = { _username, _password };
-  // Fill Username field with "_username"
-  await context.stable.clickType(elements["textbox_username"], _username, false, _params, null, this);
-  // Fill Password field with "_password"
-  await context.stable.clickType(elements["textbox_password"], _password, false, _params, null, this);
-  // Click on LOGIN
+async function the_user_attempts_to_log_in_on_the_shop_blinqio_page() {
+  // source: recorder
+  // implemented_at: 2025-04-04T08:04:56.423Z
+  const _params = {};
+  // Click on Username Text
+  await context.stable.click(elements["null_username"], _params, null, this);
+  // Click on Password Text
+  await context.stable.click(elements["null_password"], _params, null, this);
+  // Click on Password textbox
+  await context.stable.click(elements["textbox_password"], _params, null, this);
+  // Click on Login button
+  await context.stable.click(elements["button_login"], _params, null, this);
+  // Click on Password textbox
+  await context.stable.click(elements["textbox_password"], _params, null, this);
+  // Click on Login button
   await context.stable.click(elements["button_login"], _params, null, this);
 }
 
-Given("login with {string} and {string}", { timeout: 240000 }, login_with_username_and_password);
+Given(
+  "The user attempts to log in on the Shop BlinqIO page",
+  { timeout: 360000 },
+  the_user_attempts_to_log_in_on_the_shop_blinqio_page
+);
