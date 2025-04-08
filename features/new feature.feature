@@ -1,3 +1,4 @@
 Feature: new feature
-	@regression
-	Scenario Outline:
+
+  @regression
+  Scenario Outline: Untitled
