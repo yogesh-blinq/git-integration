@@ -7,3 +7,6 @@ Feature: 1234
     Examples:
       | username   | username_faker         | password  | item                               |
       | blinq_user | {{person.firstName()}} | let_me_in | Urban Backpack - Compact & Durable |
+
+  @regression
+  Scenario Outline:
