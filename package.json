@@ -1,0 +1,5 @@
+{
+  "devDependencies": {
+    "@dev-blinq/cucumber_client": "^1.0.1417-dev"
+  }
+}
