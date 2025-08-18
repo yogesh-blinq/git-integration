@@ -1,0 +1,243 @@
+2025-08-18 23:10:34 - [32minfo[39m: Browser launched in 1.041 s 
+2025-08-18 23:10:34 - [32minfo[39m: Test data 
+{
+  sdc: [32m'sdc'[39m,
+  env: { baseUrl: [32m'https://www.shop-blinq.io/'[39m, name: [32m'shop-blinq'[39m }
+}
+2025-08-18 23:10:34 - [32minfo[39m: Watching for test data changes 
+2025-08-18 23:10:36 - [32minfo[39m: total steps definitions found [33m20[39m
+2025-08-18 23:10:36 - [32minfo[39m: total steps definitions found [33m20[39m
+2025-08-18 23:11:11 - [32minfo[39m: data: {
+  "commands": [
+    {
+      "type": "url",
+      "path": "https://www.shop-blinq.io/login",
+      "title": "Shop Blinq - Login"
+    },
+    {
+      "type": "click",
+      "name": "Log In",
+      "role": null,
+      "inputID": "bvt_input_2_jkijzj"
+    },
+    {
+      "type": "context_click",
+      "label": "Log InUsername *Password *Login",
+      "value": "Log InUsername *Password *Login",
+      "role": null,
+      "inputID": "bvt_input_4_jkijzj"
+    },
+    {
+      "type": "click",
+      "name": "Login",
+      "role": "button",
+      "inputID": "bvt_input_6_jkijzj"
+    }
+  ],
+  "stepsNames": [],
+  "parameters": [],
+  "map": []
+} 
+2025-08-18 23:11:11 - [32minfo[39m: data: {
+  "files": [
+    {
+      "name": "feature1.feature",
+      "content": "Feature: feature1\n\n  @a\n  Scenario Outline: Login with username and password\n    # Click on Username *Password *Login, Click on Username, Click on Log InUsername *Password *Login in the context of <login_form_section_text>\n    Given The user clicks on Log InUsername *Password *Login in the context of \"<login_form_section_text>\"\n\n    Examples:\n      | login_form_section_text         |\n      | Log InUsername *Password *Login |\n\n  Scenario: Multiple logins attempt\n    # Click on Log In, Click on Log In, Click on Log In\n    Given The user clicks multiple times on Log In on the Shop Blinq Login page\n"
+    }
+  ],
+  "scenario": {
+    "scenario": {
+      "name": "",
+      "steps": [
+        {
+          "text": "Generating step name...",
+          "keyword": "When",
+          "keywordType": "Action",
+          "isImplemented": false,
+          "commands": [
+            {
+              "type": "click_element",
+              "element": {
+                "role": null,
+                "name": "Log In"
+              },
+              "lastKnownUrlPath": "/login",
+              "count": 1,
+              "cmdId": "C_1",
+              "allStrategyLocators": {
+                "custom": [],
+                "context": [],
+                "basic": [
+                  {
+                    "css": "internal:text=\"Log In\"i",
+                    "score": 180,
+                    "priority": 1
+                  },
+                  {
+                    "css": "internal:text=\"Log In\"s",
+                    "score": 185,
+                    "priority": 1
+                  },
+                  {
+                    "css": "internal:text=\"Log InUsername *Password *\"i >> div >> internal:has-text=\"Log In\"i",
+                    "score": 368,
+                    "priority": 1
+                  },
+                  {
+                    "css": "internal:text=\"Log InUsername *Password *Login\"i >> div >> internal:has-text=\"Log In\"i",
+                    "score": 369,
+                    "priority": 1
+                  },
+                  {
+                    "css": "internal:text=\"Log InUsername *Password *Login\"s >> div >> internal:has-text=\"Log In\"i",
+                    "score": 371.5,
+                    "priority": 1
+                  }
+                ],
+                "text_with_index": [],
+                "ignore_digit": [],
+                "no_text": [
+                  {
+                    "css": "div.MuiTypography-root.css-hvmvtn",
+                    "score": 500,
+                    "priority": 3
+                  }
+                ],
+                "strategy": "basic"
+              },
+              "isLocatorsAssigned": true
+            },
+            {
+              "type": "context_click",
+              "element": {
+                "role": null,
+                "name": "Log InUsername *Password *Login"
+              },
+              "label": "Log InUsername *Password *Login",
+              "value": "Log InUsername *Password *Login",
+              "lastKnownUrlPath": "/login",
+              "text": "Log InUsername *Password *Login",
+              "count": 1,
+              "cmdId": "C_2",
+              "allStrategyLocators": {
+                "custom": [],
+                "context": [
+                  {
+                    "css": "div >> internal:has-text=\"Log InUsername *Password *\"i",
+                    "climb": 1,
+                    "text": "Log InUsername *Password *Login",
+                    "priority": 1
+                  }
+                ],
+                "basic": [
+                  {
+                    "css": "internal:text=\"Log InUsername *Password *\"i",
+                    "score": 181,
+                    "priority": 1
+                  },
+                  {
+                    "css": "internal:text=\"Log InUsername *Password *Login\"i",
+                    "score": 183,
+                    "priority": 1
+                  },
+                  {
+                    "css": "internal:text=\"Log InUsername *Password *Login\"s",
+                    "score": 188,
+                    "priority": 1
+                  },
+                  {
+                    "css": "internal:text=\"Log InUsername *Password *\"i >> xpath=.. >> div >> internal:has-text=\"Log InUsername *Password *\"i",
+                    "score": 368.25,
+                    "priority": 1
+                  },
+                  {
+                    "css": "internal:text=\"Log InUsername *Password *\"i >> xpath=.. >> div >> internal:has-text=\"Log InUsername *Password *Login\"i",
+                    "score": 368.75,
+                    "priority": 1
+                  }
+                ],
+                "text_with_index": [],
+                "ignore_digit": [],
+                "no_text": [
+                  {
+                    "css": "div.MuiBox-root.css-blwwmq",
+                    "score": 500,
+                    "priority": 3
+                  }
+                ],
+                "strategy": "context"
+              },
+              "isLocatorsAssigned": true
+            },
+            {
+              "type": "click_element",
+              "element": {
+                "role": "button",
+                "name": "Login"
+              },
+              "lastKnownUrlPath": "/login",
+              "count": 1,
+              "cmdId": "C_3",
+              "allStrategyLocators": {
+                "custom": [],
+                "context": [],
+                "basic": [
+                  {
+                    "css": "internal:text=\"Login\"s",
+                    "score": 185,
+                    "priority": 1
+                  },
+                  {
+                    "css": "internal:text=\"Login\"i",
+                    "score": 180,
+                    "priority": 1
+                  },
+                  {
+                    "css": "button >> internal:has-text=\"Login\"i",
+                    "score": 355,
+                    "priority": 1
+                  },
+                  {
+                    "css": "button >> internal:has-text=/^Login$/",
+                    "score": 390,
+                    "priority": 1
+                  },
+                  {
+                    "css": "internal:role=button[name=\"Login\"s]",
+                    "score": 107,
+                    "priority": 1
+                  }
+                ],
+                "text_with_index": [],
+                "ignore_digit": [],
+                "no_text": [
+                  {
+                    "score": 530,
+                    "css": "button",
+                    "priority": 1
+                  },
+                  {
+                    "score": 620,
+                    "css": "form >> internal:role=button",
+                    "priority": 1
+                  }
+                ],
+                "strategy": "basic"
+              },
+              "isLocatorsAssigned": true
+            }
+          ],
+          "startFrame": {
+            "url": "https://www.shop-blinq.io/login",
+            "title": "Shop Blinq - Login"
+          },
+          "isApiStep": false,
+          "isRegex": false,
+          "routeItems": [],
+          "id": "S_1"
+        }
+      ],
+      "parametersMap": {}
+    }
+  }
+} 

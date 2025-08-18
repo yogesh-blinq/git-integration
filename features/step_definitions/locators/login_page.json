@@ -1,0 +1,137 @@
+{
+  "text_log_in": {
+    "custom": [],
+    "context": [],
+    "basic": [
+      {
+        "css": "internal:text=\"Log In\"i",
+        "score": 180,
+        "priority": 1
+      },
+      {
+        "css": "internal:text=\"Log In\"s",
+        "score": 185,
+        "priority": 1
+      },
+      {
+        "css": "internal:text=\"Log InUsername *Password *\"i >> div >> internal:has-text=\"Log In\"i",
+        "score": 368,
+        "priority": 1
+      },
+      {
+        "css": "internal:text=\"Log InUsername *Password *Login\"i >> div >> internal:has-text=\"Log In\"i",
+        "score": 369,
+        "priority": 1
+      },
+      {
+        "css": "internal:text=\"Log InUsername *Password *Login\"s >> div >> internal:has-text=\"Log In\"i",
+        "score": 371.5,
+        "priority": 1
+      }
+    ],
+    "text_with_index": [],
+    "ignore_digit": [],
+    "no_text": [
+      {
+        "css": "div.MuiTypography-root.css-hvmvtn",
+        "score": 500,
+        "priority": 3
+      }
+    ],
+    "strategy": "basic"
+  },
+  "text_log_inusername_password_login": {
+    "custom": [],
+    "context": [
+      {
+        "css": "div >> internal:has-text=\"Log InUsername *Password *\"i",
+        "climb": 1,
+        "text": "Log InUsername *Password *Login",
+        "priority": 1
+      }
+    ],
+    "basic": [
+      {
+        "css": "internal:text=\"Log InUsername *Password *\"i",
+        "score": 181,
+        "priority": 1
+      },
+      {
+        "css": "internal:text=\"Log InUsername *Password *Login\"i",
+        "score": 183,
+        "priority": 1
+      },
+      {
+        "css": "internal:text=\"Log InUsername *Password *Login\"s",
+        "score": 188,
+        "priority": 1
+      },
+      {
+        "css": "internal:text=\"Log InUsername *Password *\"i >> xpath=.. >> div >> internal:has-text=\"Log InUsername *Password *\"i",
+        "score": 368.25,
+        "priority": 1
+      },
+      {
+        "css": "internal:text=\"Log InUsername *Password *\"i >> xpath=.. >> div >> internal:has-text=\"Log InUsername *Password *Login\"i",
+        "score": 368.75,
+        "priority": 1
+      }
+    ],
+    "text_with_index": [],
+    "ignore_digit": [],
+    "no_text": [
+      {
+        "css": "div.MuiBox-root.css-blwwmq",
+        "score": 500,
+        "priority": 3
+      }
+    ],
+    "strategy": "context"
+  },
+  "button_login": {
+    "custom": [],
+    "context": [],
+    "basic": [
+      {
+        "css": "internal:text=\"Login\"s",
+        "score": 185,
+        "priority": 1
+      },
+      {
+        "css": "internal:text=\"Login\"i",
+        "score": 180,
+        "priority": 1
+      },
+      {
+        "css": "button >> internal:has-text=\"Login\"i",
+        "score": 355,
+        "priority": 1
+      },
+      {
+        "css": "button >> internal:has-text=/^Login$/",
+        "score": 390,
+        "priority": 1
+      },
+      {
+        "css": "internal:role=button[name=\"Login\"s]",
+        "score": 107,
+        "priority": 1
+      }
+    ],
+    "text_with_index": [],
+    "ignore_digit": [],
+    "no_text": [
+      {
+        "score": 530,
+        "css": "button",
+        "priority": 1
+      },
+      {
+        "score": 620,
+        "css": "form >> internal:role=button",
+        "priority": 1
+      }
+    ],
+    "strategy": "basic"
+  }
+}
