@@ -36,6 +36,25 @@ const elements = {
     element_name: "Login button",
     element_key: "button_login",
   },
+  text_log_inusername_password_login_1: {
+    locators: [
+      { css: 'internal:text="Log InUsername *Password *"i >> xpath=..', priority: 1 },
+      { css: 'internal:text="Log InUsername *Password *Login"i >> xpath=..', priority: 1 },
+      { css: 'internal:text="Log InUsername *Password *Login"s >> xpath=..', priority: 1 },
+      {
+        css: 'internal:text="Log InUsername *Password *"i >> xpath=../.. >> div >> internal:has-text="Log InUsername *Password *"i',
+        priority: 2,
+        index: 0,
+      },
+      {
+        css: 'internal:text="Log InUsername *Password *"i >> xpath=../.. >> div >> internal:has-text="Log InUsername *Password *Login"i',
+        priority: 2,
+        index: 0,
+      },
+    ],
+    element_name: "Log InUsername *Password *Login Text",
+    element_key: "text_log_inusername_password_login_1",
+  },
 };
 
 /**
@@ -65,4 +84,23 @@ Given(
   "The user interacts with the login form labeled as {string}",
   { timeout: 180000 },
   the_user_interacts_with_the_login_form_labeled_as_login_form_label
+);
+
+/**
+ * The user clicks on the Login button on the login page
+ * @recorder
+ * @path=/login
+ */
+async function the_user_clicks_on_the_login_button_on_the_login_page() {
+  // source: recorder
+  // implemented_at: 2025-08-18T18:42:03.073Z
+  const _params = {};
+  // Click on Log InUsername *Password *Login Text
+  await context.web.click(elements["text_log_inusername_password_login_1"], _params, null, this);
+}
+
+Given(
+  "The user clicks on the Login button on the login page",
+  { timeout: 60000 },
+  the_user_clicks_on_the_login_button_on_the_login_page
 );

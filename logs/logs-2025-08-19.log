@@ -1,0 +1,131 @@
+2025-08-19 00:11:20 - [32minfo[39m: Browser launched in 0.921 s 
+2025-08-19 00:11:20 - [32minfo[39m: Test data 
+{
+  sdc: [32m'sdc'[39m,
+  env: { baseUrl: [32m'https://www.shop-blinq.io/'[39m, name: [32m'shop-blinq'[39m }
+}
+2025-08-19 00:11:20 - [32minfo[39m: Watching for test data changes 
+2025-08-19 00:11:21 - [32minfo[39m: total steps definitions found [33m21[39m
+2025-08-19 00:11:22 - [32minfo[39m: total steps definitions found [33m21[39m
+2025-08-19 00:11:46 - [32minfo[39m: data: {
+  "commands": [
+    {
+      "type": "url",
+      "path": "https://www.shop-blinq.io/login",
+      "title": "Shop Blinq - Login"
+    },
+    {
+      "type": "click",
+      "name": "Log InUsername *Password *Login",
+      "role": null,
+      "inputID": "bvt_input_2_32v40b"
+    }
+  ],
+  "stepsNames": [],
+  "parameters": [],
+  "map": []
+} 
+2025-08-19 00:11:46 - [32minfo[39m: data: {
+  "files": [
+    {
+      "name": "feature1.feature",
+      "content": "Feature: feature1\n\n  @a\n  Scenario Outline: Login with username and password\n    # Click on Username *Password *Login, Click on Username, Click on Log InUsername *Password *Login in the context of <login_form_section_text>\n    Given The user clicks on Log InUsername *Password *Login in the context of \"<login_form_section_text>\"\n\n    Examples:\n      | login_form_section_text         |\n      | Log InUsername *Password *Login |\n\n  Scenario: Multiple logins attempt\n    # Click on Log In, Click on Log In, Click on Log In\n    Given The user clicks multiple times on Log In on the Shop Blinq Login page\n"
+    },
+    {
+      "name": "feature2.feature",
+      "content": "Feature: feature2\n\n  Scenario Outline: Login to shop blinq\n    # Click on Log In, Click on Log InUsername *Password *Login in the context of <login_form_label>, Click on Login\n    Given The user interacts with the login form labeled as \"<login_form_label>\"\n\n    Examples:\n      | login_form_label                |\n      | Log InUsername *Password *Login |\n"
+    }
+  ],
+  "scenario": {
+    "scenario": {
+      "name": "",
+      "steps": [
+        {
+          "text": "Generating step name...",
+          "keyword": "When",
+          "keywordType": "Action",
+          "isImplemented": false,
+          "commands": [
+            {
+              "type": "click_element",
+              "element": {
+                "role": null,
+                "name": "Log InUsername *Password *Login"
+              },
+              "lastKnownUrlPath": "/login",
+              "count": 1,
+              "cmdId": "C_1",
+              "allStrategyLocators": {
+                "custom": [],
+                "context": [],
+                "basic": [
+                  {
+                    "css": "internal:text=\"Log InUsername *Password *\"i >> xpath=..",
+                    "score": 181,
+                    "priority": 1
+                  },
+                  {
+                    "css": "internal:text=\"Log InUsername *Password *Login\"i >> xpath=..",
+                    "score": 183,
+                    "priority": 1
+                  },
+                  {
+                    "css": "internal:text=\"Log InUsername *Password *Login\"s >> xpath=..",
+                    "score": 188,
+                    "priority": 1
+                  },
+                  {
+                    "css": "internal:text=\"Log InUsername *Password *\"i >> xpath=../.. >> div >> internal:has-text=\"Log InUsername *Password *\"i",
+                    "score": 468.25,
+                    "priority": 2,
+                    "index": 0
+                  },
+                  {
+                    "css": "internal:text=\"Log InUsername *Password *\"i >> xpath=../.. >> div >> internal:has-text=\"Log InUsername *Password *Login\"i",
+                    "score": 468.75,
+                    "priority": 2,
+                    "index": 0
+                  }
+                ],
+                "text_with_index": [
+                  {
+                    "css": "internal:text=\"Log InUsername *Password *\"i >> xpath=../.. >> div >> internal:has-text=\"Log InUsername *Password *\"i",
+                    "score": 468.25,
+                    "priority": 2,
+                    "index": 0
+                  },
+                  {
+                    "css": "internal:text=\"Log InUsername *Password *\"i >> xpath=../.. >> div >> internal:has-text=\"Log InUsername *Password *Login\"i",
+                    "score": 468.75,
+                    "priority": 2,
+                    "index": 0
+                  }
+                ],
+                "ignore_digit": [],
+                "no_text": [
+                  {
+                    "score": 715,
+                    "css": "#root >> div",
+                    "priority": 2,
+                    "index": 4
+                  }
+                ],
+                "strategy": "basic"
+              },
+              "isLocatorsAssigned": true
+            }
+          ],
+          "startFrame": {
+            "url": "https://www.shop-blinq.io/login",
+            "title": "Shop Blinq - Login"
+          },
+          "isApiStep": false,
+          "isRegex": false,
+          "routeItems": [],
+          "id": "S_1"
+        }
+      ],
+      "parametersMap": {}
+    }
+  }
+} 

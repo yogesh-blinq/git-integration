@@ -42,51 +42,60 @@
   },
   "text_log_inusername_password_login": {
     "custom": [],
-    "context": [
-      {
-        "css": "div >> internal:has-text=\"Log InUsername *Password *\"i",
-        "climb": 1,
-        "text": "Log InUsername *Password *Login",
-        "priority": 1
-      }
-    ],
+    "context": [],
     "basic": [
       {
-        "css": "internal:text=\"Log InUsername *Password *\"i",
+        "css": "internal:text=\"Log InUsername *Password *\"i >> xpath=..",
         "score": 181,
         "priority": 1
       },
       {
-        "css": "internal:text=\"Log InUsername *Password *Login\"i",
+        "css": "internal:text=\"Log InUsername *Password *Login\"i >> xpath=..",
         "score": 183,
         "priority": 1
       },
       {
-        "css": "internal:text=\"Log InUsername *Password *Login\"s",
+        "css": "internal:text=\"Log InUsername *Password *Login\"s >> xpath=..",
         "score": 188,
         "priority": 1
       },
       {
-        "css": "internal:text=\"Log InUsername *Password *\"i >> xpath=.. >> div >> internal:has-text=\"Log InUsername *Password *\"i",
-        "score": 368.25,
-        "priority": 1
+        "css": "internal:text=\"Log InUsername *Password *\"i >> xpath=../.. >> div >> internal:has-text=\"Log InUsername *Password *\"i",
+        "score": 468.25,
+        "priority": 2,
+        "index": 0
       },
       {
-        "css": "internal:text=\"Log InUsername *Password *\"i >> xpath=.. >> div >> internal:has-text=\"Log InUsername *Password *Login\"i",
-        "score": 368.75,
-        "priority": 1
+        "css": "internal:text=\"Log InUsername *Password *\"i >> xpath=../.. >> div >> internal:has-text=\"Log InUsername *Password *Login\"i",
+        "score": 468.75,
+        "priority": 2,
+        "index": 0
       }
     ],
-    "text_with_index": [],
+    "text_with_index": [
+      {
+        "css": "internal:text=\"Log InUsername *Password *\"i >> xpath=../.. >> div >> internal:has-text=\"Log InUsername *Password *\"i",
+        "score": 468.25,
+        "priority": 2,
+        "index": 0
+      },
+      {
+        "css": "internal:text=\"Log InUsername *Password *\"i >> xpath=../.. >> div >> internal:has-text=\"Log InUsername *Password *Login\"i",
+        "score": 468.75,
+        "priority": 2,
+        "index": 0
+      }
+    ],
     "ignore_digit": [],
     "no_text": [
       {
-        "css": "div.MuiBox-root.css-blwwmq",
-        "score": 500,
-        "priority": 3
+        "score": 715,
+        "css": "#root >> div",
+        "priority": 2,
+        "index": 4
       }
     ],
-    "strategy": "context"
+    "strategy": "basic"
   },
   "button_login": {
     "custom": [],
@@ -130,6 +139,63 @@
         "score": 620,
         "css": "form >> internal:role=button",
         "priority": 1
+      }
+    ],
+    "strategy": "basic"
+  },
+  "text_log_inusername_password_login_1": {
+    "custom": [],
+    "context": [],
+    "basic": [
+      {
+        "css": "internal:text=\"Log InUsername *Password *\"i >> xpath=..",
+        "score": 181,
+        "priority": 1
+      },
+      {
+        "css": "internal:text=\"Log InUsername *Password *Login\"i >> xpath=..",
+        "score": 183,
+        "priority": 1
+      },
+      {
+        "css": "internal:text=\"Log InUsername *Password *Login\"s >> xpath=..",
+        "score": 188,
+        "priority": 1
+      },
+      {
+        "css": "internal:text=\"Log InUsername *Password *\"i >> xpath=../.. >> div >> internal:has-text=\"Log InUsername *Password *\"i",
+        "score": 468.25,
+        "priority": 2,
+        "index": 0
+      },
+      {
+        "css": "internal:text=\"Log InUsername *Password *\"i >> xpath=../.. >> div >> internal:has-text=\"Log InUsername *Password *Login\"i",
+        "score": 468.75,
+        "priority": 2,
+        "index": 0
+      }
+    ],
+    "text_with_index": [
+      {
+        "css": "internal:text=\"Log InUsername *Password *\"i >> xpath=../.. >> div >> internal:has-text=\"Log InUsername *Password *\"i",
+        "score": 468.25,
+        "priority": 2,
+        "index": 0
+      },
+      {
+        "css": "internal:text=\"Log InUsername *Password *\"i >> xpath=../.. >> div >> internal:has-text=\"Log InUsername *Password *Login\"i",
+        "score": 468.75,
+        "priority": 2,
+        "index": 0
+      }
+    ],
+    "ignore_digit": [],
+    "no_text": [
+      {
+        "score": 715,
+        "css": "#root >> div",
+        "priority": 2,
+        "index": 4
       }
     ],
     "strategy": "basic"
