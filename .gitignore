@@ -1,8 +1,4 @@
 node_modules
-package.json
-package-lock.json
-reports
-logs
+__temp_features*/
 runs
-.DS_Store
-.memory.json
+reports
