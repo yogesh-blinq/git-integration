@@ -36,24 +36,20 @@ const elements = {
     element_name: "Login button",
     element_key: "button_login",
   },
-  text_log_inusername_password_login_1: {
+  button_login_1: {
     locators: [
-      { css: 'internal:text="Log InUsername *Password *"i >> xpath=..', priority: 1 },
-      { css: 'internal:text="Log InUsername *Password *Login"i >> xpath=..', priority: 1 },
-      { css: 'internal:text="Log InUsername *Password *Login"s >> xpath=..', priority: 1 },
-      {
-        css: 'internal:text="Log InUsername *Password *"i >> xpath=../.. >> div >> internal:has-text="Log InUsername *Password *"i',
-        priority: 2,
-        index: 0,
-      },
-      {
-        css: 'internal:text="Log InUsername *Password *"i >> xpath=../.. >> div >> internal:has-text="Log InUsername *Password *Login"i',
-        priority: 2,
-        index: 0,
-      },
+      { css: 'internal:role=button[name="Login"i]', priority: 1 },
+      { css: 'internal:role=button[name="Login"s]', priority: 1 },
+      { css: 'internal:text="Login"i', priority: 1 },
+      { css: 'internal:text="Login"s', priority: 1 },
+      { css: 'button >> internal:has-text="Login"i', priority: 1 },
+      { css: "button >> internal:has-text=/^Login$/", priority: 1 },
+      { css: "button" },
+      { css: "[tabindex]" },
     ],
-    element_name: "Log InUsername *Password *Login Text",
-    element_key: "text_log_inusername_password_login_1",
+    element_name: "LOGIN button",
+    tagName: null,
+    element_key: "button_login_1",
   },
 };
 
@@ -88,15 +84,14 @@ Given(
 
 /**
  * The user clicks on the Login button on the login page
- * @recorder
- * @path=/login
+ * @ai
  */
 async function the_user_clicks_on_the_login_button_on_the_login_page() {
-  // source: recorder
-  // implemented_at: 2025-08-18T18:42:03.073Z
+  // source: ai
+  // implemented_at: 2025-08-21T10:01:52.686Z
   const _params = {};
-  // Click on Log InUsername *Password *Login Text
-  await context.web.click(elements["text_log_inusername_password_login_1"], _params, null, this);
+  // Click on LOGIN button
+  await context.web.click(elements["button_login_1"], _params, null, this);
 }
 
 Given(
