@@ -1,3 +1,4 @@
 Feature: zxcv
-	@regression
-	Scenario Outline:
+
+  @regression
+  Scenario Outline: Untitled
