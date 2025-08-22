@@ -1,3 +1,4 @@
 Feature: 12345
-	@regression
-	Scenario Outline:
+
+  @regression
+  Scenario Outline: ui
