@@ -1,4 +1,4 @@
 Feature: hello
 
   @regression
-  Scenario Outline: newsceanruo
+  Scenario Outline: newsceanru
