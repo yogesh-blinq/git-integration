@@ -1,16 +1,13 @@
 Feature: qwe
+@regression
+Scenario Outline: jfaoejfaof
 
-  @regression
-  Scenario Outline: faoefafa
+@regression
+Scenario Outline: Untitled
 
-  @regression
-  Scenario Outline: jfaoejfaof
+@regression
+Scenario Outline: Untitled (1)
 
-  @regression
-  Scenario Outline: Untitled
+@regression
+Scenario Outline: Untitled (2)
 
-  @regression
-  Scenario Outline: Untitled (1)
-
-  @regression
-  Scenario Outline: Untitled (2)
