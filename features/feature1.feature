@@ -1,7 +1,7 @@
 Feature: feature1
 
   @a
-  Scenario Outline: Login with username and password
+  Scenario Outline: Login with username and password yes
     # Click on Username *Password *Login, Click on Username, Click on Log InUsername *Password *Login in the context of <login_form_section_text>
     Given The user clicks on Log InUsername *Password *Login in the context of "<login_form_section_text>"
 
