@@ -5,3 +5,6 @@ Feature: qwe
 
   @regression
   Scenario Outline: jfaoejfaof
+
+  @regression
+  Scenario Outline:
