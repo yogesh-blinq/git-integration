@@ -1,3 +1,4 @@
 Feature: uiy
-	@regression
-	Scenario Outline:
+
+  @regression
+  Scenario Outline: rtyu
