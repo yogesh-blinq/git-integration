@@ -1,7 +1,7 @@
-Feature: hello
+Feature: hel
 
   @regression
-  Scenario Outline: Untitled
+  Scenario Outline: Untitl
 
   @regression
   Scenario Outline:
