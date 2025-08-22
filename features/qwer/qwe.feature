@@ -1,5 +1,6 @@
 Feature: qwe
 
+  @j
   Scenario Outline: Untitled
 
   @regression
