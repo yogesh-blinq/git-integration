@@ -1,4 +1,4 @@
 Feature: qwe
 
   @regression
-  Scenario Outline: qwertyuio
+  Scenario Outline: faoefafa
