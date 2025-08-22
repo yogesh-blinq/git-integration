@@ -1,7 +1,7 @@
 Feature: hello
 
   @regression
-  Scenario Outline: newsceanruk
+  Scenario Outline: Untitled
 
   @regression
   Scenario Outline:
