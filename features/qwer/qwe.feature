@@ -11,3 +11,6 @@ Feature: qwe
 
   @regression
   Scenario Outline: Untitled (1)
+
+  @regression
+  Scenario Outline:
