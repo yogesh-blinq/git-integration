@@ -1,7 +1,7 @@
 Feature: hel
 
   @regression
-  Scenario Outline: Untitl
+  Scenario Outline: Unti
 
   @regression
   Scenario Outline:
