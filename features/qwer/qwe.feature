@@ -7,4 +7,4 @@ Feature: qwe
   Scenario Outline: jfaoejfaof
 
   @regression
-  Scenario Outline:
+  Scenario Outline: Untitled
