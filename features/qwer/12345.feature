@@ -4,4 +4,4 @@ Feature: 12345
   Scenario Outline: ui
 
   @regression
-  Scenario Outline:
+  Scenario Outline: rtghj
