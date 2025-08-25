@@ -4,4 +4,4 @@ Feature: wertfc
   Scenario Outline: Untitletyu
 
   @regression
-  Scenario Outline:
+  Scenario Outline: qwertyuio
