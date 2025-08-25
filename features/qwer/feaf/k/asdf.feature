@@ -1,3 +1,4 @@
 Feature: asdf
-	@regression
-	Scenario Outline:
+
+  @regression
+  Scenario Outline: Untitled
