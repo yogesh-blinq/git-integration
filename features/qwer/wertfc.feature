@@ -1,3 +1,4 @@
 Feature: wertfc
-	@regression
-	Scenario Outline:
+
+  @regression
+  Scenario Outline: Untitled
