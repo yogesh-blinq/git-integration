@@ -1,3 +1,4 @@
 Feature: graggaf
-	@regression
-	Scenario Outline:
+
+  @regression
+  Scenario Outline: qwer
