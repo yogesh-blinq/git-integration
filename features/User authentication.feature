@@ -26,4 +26,4 @@ Feature: User authentication
       | registereduser@example.com |
 
   @regression
-  Scenario Outline:
+  Scenario Outline: Untitled
