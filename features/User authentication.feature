@@ -35,4 +35,4 @@ Feature: User authentication
   Scenario Outline: g5
 
   @regression
-  Scenario Outline:
+  Scenario Outline: 45
