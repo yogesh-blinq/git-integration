@@ -30,3 +30,6 @@ Feature: User authentication
 
   @regression
   Scenario Outline:
+
+  @regression
+  Scenario Outline:
