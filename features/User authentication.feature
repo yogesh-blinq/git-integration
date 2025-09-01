@@ -33,3 +33,6 @@ Feature: User authentication
 
   @regression
   Scenario Outline: g5
+
+  @regression
+  Scenario Outline:
