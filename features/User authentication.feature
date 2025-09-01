@@ -5,22 +5,25 @@ Feature: User authentication
     # Click on Log InUsername *Password *Login
     Given The user clicks on the Login button on the login page
 
-Scenario Outline: User Registration with Valid Data
+  Scenario Outline: User Registration with Valid Data
     Given The user navigates to the registration page
     When The user enters "<email>" and "<password>" into the registration form
     And The user submits the registration form
     Then The user should see a confirmation of account creation
 
     Examples:
-      | email               | password         |
-      | newuser@example.com | SecurePass123!   |
+      | email               | password       |
+      | newuser@example.com | SecurePass123! |
 
-Scenario Outline: Password Reset Request
+  Scenario Outline: Password Reset Request
     Given The user navigates to the login page
     When The user clicks on "Forgot Password"
     And The user enters "<email>" into the email field
     Then The user should receive a password reset email
 
     Examples:
-      | email                     |
+      | email                      |
       | registereduser@example.com |
+
+  @regression
+  Scenario Outline:
