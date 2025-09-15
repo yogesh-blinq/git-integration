@@ -2,100 +2,100 @@ import { Given, When, Then, After, setDefaultTimeout, Before } from "@dev-blinq/
 import { closeContext, initContext, navigate, TestContext as context } from "automation_model";
 
 const elements = {
-  text_log_in: {
+  textbox_username: {
     locators: [
-      { css: 'internal:text="Log In"i', priority: 1 },
-      { css: 'internal:text="Log In"s', priority: 1 },
-      { css: 'internal:text="Log InUsername *Password *"i >> div >> internal:has-text="Log In"i', priority: 1 },
-      { css: 'internal:text="Log InUsername *Password *Login"i >> div >> internal:has-text="Log In"i', priority: 1 },
-      { css: 'internal:text="Log InUsername *Password *Login"s >> div >> internal:has-text="Log In"i', priority: 1 },
+      { css: 'internal:role=textbox[name="Username"i]', priority: 1 },
+      { css: 'internal:role=textbox[name="Username"s]', priority: 1 },
     ],
-    element_name: "Log In Text",
-    element_key: "text_log_in",
+    element_name: "Username textbox",
+    element_key: "textbox_username",
   },
-  text_log_inusername_password_login: {
+  text_accepted_usernames_are_blinq_userbl: {
     locators: [
+      { css: 'internal:text="Accepted usernames are:"i >> xpath=../..', priority: 1 },
       {
-        css: 'div >> internal:has-text="Log InUsername *Password *"i',
-        climb: 1,
-        text: "{login_form_label}",
+        css: 'internal:text="Accepted usernames are:blinq_userblinq_adminPassword for all users:let_me_in"i >> xpath=..',
         priority: 1,
       },
+      {
+        css: 'internal:text="Accepted usernames are:blinq_userblinq_adminPassword for all users:let_me_in"s >> xpath=..',
+        priority: 1,
+      },
+      {
+        css: 'internal:text="Log InUsername *Password *"i >> xpath=../.. >> div >> internal:has-text="Accepted usernames are:"i',
+        priority: 2,
+        index: 0,
+      },
+      {
+        css: 'internal:text="Log InUsername *Password *"i >> xpath=../.. >> div >> internal:has-text="Accepted usernames are:blinq_userblinq_adminPassword for all users:let_me_in"i',
+        priority: 2,
+        index: 0,
+      },
     ],
-    element_name: "Log InUsername *Password *Login Text",
-    element_key: "text_log_inusername_password_login",
+    element_name: "Accepted usernames are:blinq_userblinq_adminPassword for all users:let_me_in Text",
+    element_key: "text_accepted_usernames_are_blinq_userbl",
   },
-  button_login: {
+  textbox_username_1: {
     locators: [
-      { css: 'internal:text="Login"s', priority: 1 },
-      { css: 'internal:text="Login"i', priority: 1 },
-      { css: 'button >> internal:has-text="Login"i', priority: 1 },
-      { css: "button >> internal:has-text=/^Login$/", priority: 1 },
-      { css: 'internal:role=button[name="Login"s]', priority: 1 },
+      { css: 'internal:role=textbox[name="Username"i]', priority: 1 },
+      { css: 'internal:role=textbox[name="Username"s]', priority: 1 },
     ],
-    element_name: "Login button",
-    element_key: "button_login",
+    element_name: "Username textbox",
+    element_key: "textbox_username_1",
   },
-  button_login_1: {
+  textbox_username_2: {
     locators: [
-      { css: 'internal:role=button[name="Login"i]', priority: 1 },
-      { css: 'internal:role=button[name="Login"s]', priority: 1 },
-      { css: 'internal:text="Login"i', priority: 1 },
-      { css: 'internal:text="Login"s', priority: 1 },
-      { css: 'button >> internal:has-text="Login"i', priority: 1 },
-      { css: "button >> internal:has-text=/^Login$/", priority: 1 },
-      { css: "button" },
-      { css: "[tabindex]" },
+      { css: 'internal:role=textbox[name="Username"i]', priority: 1 },
+      { css: 'internal:role=textbox[name="Username"s]', priority: 1 },
     ],
-    element_name: "LOGIN button",
-    tagName: null,
-    element_key: "button_login_1",
+    element_name: "Username textbox",
+    element_key: "textbox_username_2",
+  },
+  textbox_username_3: {
+    locators: [
+      { css: 'internal:role=textbox[name="Username"i]', priority: 1 },
+      { css: 'internal:role=textbox[name="Username"s]', priority: 1 },
+    ],
+    element_name: "Username textbox",
+    element_key: "textbox_username_3",
+  },
+  textbox_password: {
+    locators: [
+      { css: 'internal:role=textbox[name="Password"i]', priority: 1 },
+      { css: 'internal:role=textbox[name="Password"s]', priority: 1 },
+    ],
+    element_name: "Password textbox",
+    element_key: "textbox_password",
   },
 };
 
 /**
- * The user interacts with the login form labeled as "<login_form_label>"
- * @param {string} _login_form_label  login form label
+ * The user logs in with username "<username>" and password "<password>"
+ * @param {string} _username  username
+ * @param {string} _password  password
  * @recorder
  * @path=/login
  */
-async function the_user_interacts_with_the_login_form_labeled_as_login_form_label(_login_form_label) {
+async function the_user_logs_in_with_username_username_and_password_password(_username, _password) {
   // source: recorder
-  // implemented_at: 2025-08-18T17:41:35.842Z
-  const _params = { _login_form_label };
-  // Click on Log In Text
-  await context.web.click(elements["text_log_in"], _params, null, this);
-  //  Click on text_log_inusername_password_login in the context of <login_form_label>
-  await context.web.click(
-    elements["text_log_inusername_password_login"],
-    _params,
-    { context: _login_form_label },
-    this
-  );
-  // Click on Login button
-  await context.web.click(elements["button_login"], _params, null, this);
+  // implemented_at: 2025-09-08T15:50:15.183Z
+  const _params = { _username, _password };
+  // Click on Username textbox
+  await context.web.click(elements["textbox_username"], _params, null, this);
+  // Click on Accepted usernames are:blinq_userblinq_adminPassword for all users:let_me_in Text
+  await context.web.click(elements["text_accepted_usernames_are_blinq_userbl"], _params, null, this);
+  // Click on Username textbox
+  await context.web.click(elements["textbox_username_1"], _params, null, this);
+  // Press v
+  await context.web.clickType(elements["textbox_username_2"], "v", null, _params, { press: true }, this);
+  // Fill Username textbox with "_username"
+  await context.web.clickType(elements["textbox_username_3"], _username, false, _params, null, this);
+  // Fill Password textbox with "_password"
+  await context.web.clickType(elements["textbox_password"], _password, false, _params, null, this);
 }
 
 Given(
-  "The user interacts with the login form labeled as {string}",
-  { timeout: 180000 },
-  the_user_interacts_with_the_login_form_labeled_as_login_form_label
-);
-
-/**
- * The user clicks on the Login button on the login page
- * @ai
- */
-async function the_user_clicks_on_the_login_button_on_the_login_page() {
-  // source: ai
-  // implemented_at: 2025-08-21T10:01:52.686Z
-  const _params = {};
-  // Click on LOGIN button
-  await context.web.click(elements["button_login_1"], _params, null, this);
-}
-
-Given(
-  "The user clicks on the Login button on the login page",
-  { timeout: 60000 },
-  the_user_clicks_on_the_login_button_on_the_login_page
+  "The user logs in with username {string} and password {string}",
+  { timeout: 360000 },
+  the_user_logs_in_with_username_username_and_password_password
 );

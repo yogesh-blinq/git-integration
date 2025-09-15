@@ -1,5 +1,15 @@
 {
+  "name": "68befa6c63c43e8a3df557b5",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
   "devDependencies": {
-    "@dev-blinq/cucumber_client": "^1.0.1417-dev"
+    "@dev-blinq/cucumber_client": "^1.0.682"
   }
 }

@@ -1,9 +1,9 @@
 {
   "*": [
     {
-      "key": "sdc",
-      "value": "sdc",
-      "DataType": "string"
+      "key": "fafa",
+      "value": "U2FsdGVkX18Il5T/z1MYJ1HoFqxCW8Eh4q8S1Xv3+i4=",
+      "DataType": "totp"
     }
   ]
 }
