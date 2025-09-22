@@ -1,3 +1,7 @@
+import dotenv from "dotenv";
+// Load .env into process.env
+dotenv.config();
+
 import {
   After,
   setDefaultTimeout,
