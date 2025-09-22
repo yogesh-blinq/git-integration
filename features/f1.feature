@@ -1,3 +1,5 @@
 Feature: f1
-	@regression
-	Scenario Outline:
+
+  @regression
+  Scenario Outline: mainscenario
+    When User clicks on login button
