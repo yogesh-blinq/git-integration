@@ -7,3 +7,4 @@ runs
 *.env
 __temp_features*/
 /*.zip
+.git_ignored_modules
