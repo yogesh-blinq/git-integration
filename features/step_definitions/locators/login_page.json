@@ -1,0 +1,178 @@
+{
+  "button_login": {
+    "basic": [
+      {
+        "score": 142,
+        "css": "internal:role=button[name=\"Login\"i]",
+        "priority": 1
+      },
+      {
+        "score": 147,
+        "css": "internal:role=button[name=\"Login\"s]",
+        "priority": 1
+      },
+      {
+        "score": 180,
+        "css": "internal:text=\"Login\"i",
+        "priority": 1
+      },
+      {
+        "score": 185,
+        "css": "internal:text=\"Login\"s",
+        "priority": 1
+      },
+      {
+        "score": 355,
+        "css": "button >> internal:has-text=\"Login\"i",
+        "priority": 1
+      },
+      {
+        "score": 390,
+        "css": "button >> internal:has-text=/^Login$/",
+        "priority": 1
+      },
+      {
+        "css": "button"
+      },
+      {
+        "css": "[tabindex]"
+      }
+    ],
+    "no_text": [
+      {
+        "css": "button",
+        "priority": 1
+      }
+    ],
+    "ignore_digit": [],
+    "context": [],
+    "strategy": "basic"
+  },
+  "listitem_": {
+    "basic": [
+      {
+        "score": 191,
+        "css": "internal:text=\"blinq_user\"i >> xpath=..",
+        "priority": 1
+      },
+      {
+        "score": 196,
+        "css": "internal:text=\"blinq_user\"s >> xpath=..",
+        "priority": 1
+      },
+      {
+        "score": 355.5,
+        "css": "li >> internal:has-text=\"blinq_user\"i",
+        "priority": 1
+      },
+      {
+        "score": 390.5,
+        "css": "li >> internal:has-text=/^blinq_user$/",
+        "priority": 1
+      },
+      {
+        "css": "li:nth-of-type(1)"
+      },
+      {
+        "css": "ul > li.MuiListItem-root.MuiListItem-gutters.MuiListItem-padding:nth-child(1)"
+      }
+    ],
+    "no_text": [
+      {
+        "css": "ul > li.MuiListItem-root.MuiListItem-gutters.MuiListItem-padding:nth-child(1)",
+        "priority": 1
+      }
+    ],
+    "ignore_digit": [],
+    "context": [],
+    "strategy": "basic"
+  },
+  "button_login_1": {
+    "basic": [
+      {
+        "score": 142,
+        "css": "internal:role=button[name=\"Login\"i]",
+        "priority": 1
+      },
+      {
+        "score": 147,
+        "css": "internal:role=button[name=\"Login\"s]",
+        "priority": 1
+      },
+      {
+        "score": 180,
+        "css": "internal:text=\"Login\"i",
+        "priority": 1
+      },
+      {
+        "score": 185,
+        "css": "internal:text=\"Login\"s",
+        "priority": 1
+      },
+      {
+        "score": 355,
+        "css": "button >> internal:has-text=\"Login\"i",
+        "priority": 1
+      },
+      {
+        "score": 390,
+        "css": "button >> internal:has-text=/^Login$/",
+        "priority": 1
+      },
+      {
+        "css": "button"
+      },
+      {
+        "css": "[tabindex]"
+      }
+    ],
+    "no_text": [
+      {
+        "css": "button",
+        "priority": 1
+      }
+    ],
+    "ignore_digit": [],
+    "context": [],
+    "strategy": "basic"
+  },
+  "listitem__1": {
+    "basic": [
+      {
+        "score": 191,
+        "css": "internal:text=\"blinq_admin\"i >> xpath=..",
+        "priority": 1
+      },
+      {
+        "score": 196,
+        "css": "internal:text=\"blinq_admin\"s >> xpath=..",
+        "priority": 1
+      },
+      {
+        "score": 355.5,
+        "css": "li >> internal:has-text=\"blinq_admin\"i",
+        "priority": 1
+      },
+      {
+        "score": 390.5,
+        "css": "li >> internal:has-text=/^blinq_admin$/",
+        "priority": 1
+      },
+      {
+        "css": "li:nth-of-type(2)"
+      },
+      {
+        "css": "ul > li.MuiListItem-root.MuiListItem-gutters.MuiListItem-padding:nth-child(2)"
+      }
+    ],
+    "no_text": [
+      {
+        "css": "ul > li.MuiListItem-root.MuiListItem-gutters.MuiListItem-padding:nth-child(2)",
+        "priority": 1
+      }
+    ],
+    "ignore_digit": [],
+    "context": [],
+    "strategy": "basic"
+  }
+}
