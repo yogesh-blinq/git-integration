@@ -1,5 +1,5 @@
 Feature: f3
 
-  @regression
+  @regression @b
   Scenario Outline: b3scenario
     When the user clicks on blinq_admin
