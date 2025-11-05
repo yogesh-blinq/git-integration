@@ -7,4 +7,3 @@ runs
 *.env
 __temp_features*/
 /*.zip
-.ignored_node_modules

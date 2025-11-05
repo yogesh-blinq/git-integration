@@ -1,1 +1,0 @@
-Feature: helloScenario Outline: Untitled

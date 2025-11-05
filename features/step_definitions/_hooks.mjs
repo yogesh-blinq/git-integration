@@ -34,8 +34,8 @@ BeforeStep(async function (step) {
   }
 });
 
-AfterStep(async function (step) {
+AfterStep(async function ({ result, pickleStep }) {
   if (context) {
-    await context.web.afterStep(this, step);
+    await context.web.afterStep(this, pickleStep, result);
   }
 });
