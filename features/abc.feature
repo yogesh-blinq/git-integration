@@ -1,3 +1,5 @@
 Feature: abc
-	@regression
-	Scenario Outline:
+
+  @regression
+  Scenario Outline: ve
+    Then Verify the page url is " "
