@@ -44,5 +44,53 @@
       }
     ],
     "strategy": "basic"
+  },
+  "paragraph_accepted_usernames_are_": {
+    "custom": [],
+    "context": [],
+    "basic": [
+      {
+        "css": "internal:text=\"Accepted usernames are:\"s",
+        "score": 187,
+        "priority": 1
+      },
+      {
+        "css": "internal:text=\"Accepted usernames are:\"i",
+        "score": 182,
+        "priority": 1
+      },
+      {
+        "css": "p >> internal:has-text=\"Accepted usernames are:\"i",
+        "score": 356,
+        "priority": 1
+      },
+      {
+        "css": "p >> internal:has-text=/^Accepted usernames are:$/",
+        "score": 391,
+        "priority": 1
+      },
+      {
+        "css": "internal:role=paragraph >> internal:has-text=\"Accepted usernames are:\"i",
+        "score": 346,
+        "priority": 1
+      }
+    ],
+    "text_with_index": [],
+    "ignore_digit": [],
+    "no_text": [
+      {
+        "score": 705,
+        "css": "#root >> internal:role=paragraph",
+        "priority": 2,
+        "index": 0
+      },
+      {
+        "score": 715,
+        "css": "#root >> p",
+        "priority": 2,
+        "index": 0
+      }
+    ],
+    "strategy": "basic"
   }
 }
