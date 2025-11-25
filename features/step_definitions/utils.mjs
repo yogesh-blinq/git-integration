@@ -171,6 +171,6 @@ Then("Verify the page title is {string}", verify_page_title);
  * @returns Promise that resolves after the specified duration
  */
 async function sleep(duration) {
-  await context.web.sleep(duration, {}, null);
+  await context.web.sleep(duration, {}, this);
 }
 Then("Sleep for {string} ms", { timeout: -1 }, sleep);

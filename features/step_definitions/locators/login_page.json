@@ -1,0 +1,48 @@
+{
+  "textbox_password": {
+    "custom": [],
+    "context": [],
+    "basic": [
+      {
+        "css": "internal:role=textbox[name=\"Password\"i]",
+        "score": 102,
+        "priority": 1
+      },
+      {
+        "css": "internal:role=textbox[name=\"Password\"s]",
+        "score": 107,
+        "priority": 1
+      }
+    ],
+    "text_with_index": [],
+    "ignore_digit": [],
+    "no_text": [
+      {
+        "score": 500,
+        "css": "#password",
+        "priority": 1
+      },
+      {
+        "score": 146,
+        "css": "internal:label=\"Password *\"s",
+        "priority": 1
+      },
+      {
+        "score": 141,
+        "css": "internal:label=\"Password *\"i",
+        "priority": 1
+      },
+      {
+        "score": 520,
+        "css": "input[name=\"password\"]",
+        "priority": 1
+      },
+      {
+        "score": 520,
+        "css": "input[type=\"password\"]",
+        "priority": 1
+      }
+    ],
+    "strategy": "basic"
+  }
+}
