@@ -6,7 +6,7 @@ Feature: Login flow
     # Click on Accepted usernames are: paragraph
     When The user clicks on the paragraph Accepted usernames are:
     # Parameterized click on blinq_user
-    When The user Parameterized clicks on the "<user_element_id>"
+    When abc "<user_element_id>"
     # Parameterized click on let_me_in
     When The user Parameterized clicks on the "<button_id>"
 
