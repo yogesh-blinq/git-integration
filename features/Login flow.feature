@@ -12,5 +12,5 @@ Feature: Login flow
     When abc2
 
     Examples:
-      | user_element_id | button_id |
-      | blinq_user      | let_me_in |
+      | user_element_id | button_id | user_element_id |
+      | blinq_user      | let_me_in | blinq_user      |
