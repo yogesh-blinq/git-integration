@@ -152,5 +152,65 @@
       }
     ],
     "strategy": "basic"
+  },
+  "paragraph_blinq_user_1": {
+    "custom": [],
+    "context": [],
+    "basic": [
+      {
+        "css": "internal:text=\"blinq_user\"s",
+        "score": 186,
+        "priority": 1
+      },
+      {
+        "css": "internal:text=\"blinq_user\"i",
+        "score": 181,
+        "priority": 1
+      },
+      {
+        "css": "p >> internal:has-text=\"blinq_user\"i",
+        "score": 355.5,
+        "priority": 1
+      },
+      {
+        "css": "p >> internal:has-text=/^blinq_user$/",
+        "score": 390.5,
+        "priority": 1
+      },
+      {
+        "css": "internal:role=paragraph >> internal:has-text=\"blinq_user\"i",
+        "score": 345.5,
+        "priority": 1
+      }
+    ],
+    "text_with_index": [],
+    "ignore_digit": [],
+    "no_text": [
+      {
+        "score": 710,
+        "css": "internal:role=list >> internal:role=paragraph",
+        "priority": 2,
+        "index": 0
+      },
+      {
+        "score": 720,
+        "css": "internal:role=list >> p",
+        "priority": 2,
+        "index": 0
+      },
+      {
+        "score": 720,
+        "css": "ul >> internal:role=paragraph",
+        "priority": 2,
+        "index": 0
+      },
+      {
+        "score": 730,
+        "css": "ul >> p",
+        "priority": 2,
+        "index": 0
+      }
+    ],
+    "strategy": "basic"
   }
 }

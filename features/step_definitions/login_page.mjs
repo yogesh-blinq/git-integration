@@ -4,7 +4,8 @@ import { closeContext, initContext, navigate, TestContext as context } from "aut
 const elements = {
   textbox_password:{"locators":[{"css":"internal:role=textbox[name=\"Password\"i]","priority":1},{"css":"internal:role=textbox[name=\"Password\"s]","priority":1}],"element_name":"Password textbox","element_key":"textbox_password"},
   paragraph_accepted_usernames_are_:{"locators":[{"css":"internal:text=\"Accepted usernames are:\"s","priority":1},{"css":"internal:text=\"Accepted usernames are:\"i","priority":1},{"css":"p >> internal:has-text=\"Accepted usernames are:\"i","priority":1},{"css":"p >> internal:has-text=/^Accepted usernames are:$/","priority":1},{"css":"internal:role=paragraph >> internal:has-text=\"Accepted usernames are:\"i","priority":1}],"element_name":"Accepted usernames are: paragraph","element_key":"paragraph_accepted_usernames_are_"},
-  paragraph_blinq_user:{"locators":[{"css":"internal:text=\"{user_element_id}\"s","priority":1},{"css":"internal:text=\"{user_element_id}\"i","priority":1},{"css":"p >> internal:has-text=\"{user_element_id}\"i","priority":1},{"css":"p >> internal:has-text=/^{user_element_id}$/","priority":1},{"css":"internal:role=paragraph >> internal:has-text=\"{user_element_id}\"i","priority":1}],"element_name":"blinq_user paragraph","element_key":"paragraph_blinq_user"}
+  paragraph_blinq_user:{"locators":[{"css":"internal:text=\"{user_element_id}\"s","priority":1},{"css":"internal:text=\"{user_element_id}\"i","priority":1},{"css":"p >> internal:has-text=\"{user_element_id}\"i","priority":1},{"css":"p >> internal:has-text=/^{user_element_id}$/","priority":1},{"css":"internal:role=paragraph >> internal:has-text=\"{user_element_id}\"i","priority":1}],"element_name":"blinq_user paragraph","element_key":"paragraph_blinq_user"},
+  paragraph_blinq_user_1:{"locators":[{"css":"internal:text=\"blinq_user\"s","priority":1},{"css":"internal:text=\"blinq_user\"i","priority":1},{"css":"p >> internal:has-text=\"blinq_user\"i","priority":1},{"css":"p >> internal:has-text=/^blinq_user$/","priority":1},{"css":"internal:role=paragraph >> internal:has-text=\"blinq_user\"i","priority":1}],"element_name":"blinq_user paragraph","element_key":"paragraph_blinq_user_1"}
 };
 
 /**
@@ -60,3 +61,18 @@ async function the_user_parameterized_clicks_on_the_user_element_id (_user_eleme
 }
 
 When("The user Parameterized clicks on the {string}", { timeout: 60000}, the_user_parameterized_clicks_on_the_user_element_id);
+
+/**
+ * abc2
+ * @recorder
+ * @path=/login
+ */
+async function abc2 (){
+// source: recorder
+// implemented_at: 2025-12-10T11:10:32.850Z
+  const _params = {  };
+  // Click on blinq_user paragraph
+  await context.web.click(elements["paragraph_blinq_user_1"], _params, null, this);
+}
+
+When("abc2", { timeout: 60000}, abc2);
