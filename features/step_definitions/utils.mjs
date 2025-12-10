@@ -12,7 +12,7 @@ import path from "path";
  * @param {string} text the text to verify exists in page
  * @protect
  */
-async function verifyTextExistsInPage(text) {
+export async function verifyTextExistsInPage(text) {
   await context.web.verifyTextExistInPage(text, null, this);
 }
 Then("Verify the text {string} can be found in the page", verifyTextExistsInPage);
@@ -22,7 +22,7 @@ Then("Verify the text {string} can be found in the page", verifyTextExistsInPage
  * @param {string} elementDescription element description
  * @protect
  */
-async function clickOnElement(elementDescription) {
+export async function clickOnElement(elementDescription) {
   await context.web.simpleClick(elementDescription, null, null, this);
 }
 When("click on {string}", clickOnElement);
@@ -36,7 +36,7 @@ When("Click {string}", clickOnElement);
  * @param {string} value value to fill the element with
  * @protect
  */
-async function fillElement(elementDescription, value) {
+export async function fillElement(elementDescription, value) {
   await context.web.simpleClickType(elementDescription, value, null, null, this);
 }
 When("fill {string} with {string}", fillElement);
@@ -47,7 +47,7 @@ When("Fill {string} with {string}", fillElement);
  * @param {string} text the text to verify does not exist in page
  * @protect
  */
-async function verifyTextNotExistsInPage(text) {
+export async function verifyTextNotExistsInPage(text) {
   await context.web.waitForTextToDisappear(text, null, this);
 }
 Then("Verify the text {string} cannot be found in the page", verifyTextNotExistsInPage);
@@ -57,7 +57,7 @@ Then("Verify the text {string} cannot be found in the page", verifyTextNotExists
  * @param {string} url URL to navigate
  * @protect
  */
-async function navigateTo(url) {
+export async function navigateTo(url) {
   await context.web.goto(url, this);
 }
 When("Navigate to {string}", navigateTo);
@@ -66,7 +66,7 @@ When("Navigate to {string}", navigateTo);
  * Navigate to the current page
  * @protect
  */
-async function browserNavigateBack() {
+export async function browserNavigateBack() {
   await context.web.goBack({}, this);
 }
 Then("Browser navigate back", browserNavigateBack);
@@ -75,7 +75,7 @@ Then("Browser navigate back", browserNavigateBack);
  * Navigate forward in browser history
  * @protect
  */
-async function browserNavigateForward() {
+export async function browserNavigateForward() {
   await context.web.goForward({}, this);
 }
 Then("Browser navigate forward", browserNavigateForward);
@@ -85,7 +85,7 @@ Then("Browser navigate forward", browserNavigateForward);
  * @param {string} filePath the file path or empty to store in the test data file
  * @protect
  */
-async function storeBrowserSession(filePath) {
+export async function storeBrowserSession(filePath) {
   await context.web.saveStoreState(filePath, this);
 }
 When("Store browser session {string}", storeBrowserSession);
@@ -95,7 +95,7 @@ When("Store browser session {string}", storeBrowserSession);
  * @param {string} filePath the file path or empty
  * @protect
  */
-async function resetBrowserSession(filePath) {
+export async function resetBrowserSession(filePath) {
   await context.web.restoreSaveState(filePath, this);
 }
 When("Reset browser session {string}", resetBrowserSession);
@@ -107,7 +107,7 @@ When("Reset browser session {string}", resetBrowserSession);
  * @param {string} textToVerify the target text to verify
  * @protect
  */
-async function verifyTextRelatedToText(textAnchor, climb, textToVerify) {
+export async function verifyTextRelatedToText(textAnchor, climb, textToVerify) {
   await context.web.verifyTextRelatedToText(textAnchor, climb, textToVerify, null, this);
 }
 Then(
@@ -120,7 +120,7 @@ Then(
  * @requestName the name of the bruno request file
  * @protect
  */
-async function runBrunoRequest(requestName) {
+export async function runBrunoRequest(requestName) {
   await executeBrunoRequest(requestName, {}, context, this);
 }
 When("Bruno - {string}", runBrunoRequest);
@@ -131,7 +131,7 @@ When("bruno - {string}", runBrunoRequest);
  * @param {string} fileName the downloaded file to verify
  * @protect
  */
-async function verify_the_downloaded_file_exists(fileName) {
+export async function verify_the_downloaded_file_exists(fileName) {
   const downloadFolder = path.join(context.reportFolder, "downloads");
   const downloadFile = path.join(downloadFolder, fileName);
   await verifyFileExists(downloadFile, {}, context, this);
@@ -148,7 +148,7 @@ When("Noop", async function () {});
  * @param {string} url URL to be verified against current URL
  * @protect
  */
-async function verify_page_url(url) {
+export async function verify_page_url(url) {
   await context.web.verifyPagePath(url, {}, this);
 }
 Then("Verify the page url is {string}", verify_page_url);
@@ -158,7 +158,7 @@ Then("Verify the page url is {string}", verify_page_url);
  * @param {string} title Title to be verified against current Title
  * @protect
  */
-async function verify_page_title(title) {
+export async function verify_page_title(title) {
   await context.web.verifyPageTitle(title, {}, this);
 }
 Then("Verify the page title is {string}", verify_page_title);
@@ -170,7 +170,7 @@ Then("Verify the page title is {string}", verify_page_title);
  * @param {world} - Optional world context
  * @returns Promise that resolves after the specified duration
  */
-async function sleep(duration) {
+export async function sleep(duration) {
   await context.web.sleep(duration, {}, this);
 }
 Then("Sleep for {string} ms", { timeout: -1 }, sleep);
