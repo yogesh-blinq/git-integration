@@ -1,5 +1,4 @@
 {
   "$schema": "https://raw.githubusercontent.com/blinq-io/automation_model/refs/heads/dev/ai_config.schema.json",
-  "networkidle": false,
-  "acceptDialog": false
+  "networkidle": false
 }
