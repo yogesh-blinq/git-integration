@@ -212,5 +212,207 @@
       }
     ],
     "strategy": "basic"
+  },
+  "banner_shop_now": {
+    "custom": [],
+    "context": [],
+    "basic": [
+      {
+        "css": "internal:text=\"Shop NOW\"s >> xpath=../../..",
+        "score": 186,
+        "priority": 1
+      },
+      {
+        "css": "internal:text=\"Shop NOW\"i >> xpath=../../..",
+        "score": 181,
+        "priority": 1
+      },
+      {
+        "css": "header >> internal:has-text=\"Shop NOW\"i",
+        "score": 355.5,
+        "priority": 1
+      },
+      {
+        "css": "header >> internal:has-text=/^Shop NOW$/",
+        "score": 390.5,
+        "priority": 1
+      },
+      {
+        "css": "internal:role=banner >> internal:has-text=\"Shop NOW\"i",
+        "score": 345.5,
+        "priority": 1
+      }
+    ],
+    "text_with_index": [],
+    "ignore_digit": [],
+    "no_text": [
+      {
+        "score": 510,
+        "css": "internal:role=banner",
+        "priority": 1
+      },
+      {
+        "score": 530,
+        "css": "header",
+        "priority": 1
+      }
+    ],
+    "strategy": "basic"
+  },
+  "text_accepted_usernames_are_blinq_userbl": {
+    "custom": [],
+    "context": [],
+    "basic": [
+      {
+        "css": "internal:text=\"Accepted usernames are:\"i >> xpath=../..",
+        "score": 181,
+        "priority": 1
+      },
+      {
+        "css": "internal:text=\"Accepted usernames are:blinq_userblinq_adminPassword for all users:let_me_in\"i >> xpath=..",
+        "score": 187,
+        "priority": 1
+      },
+      {
+        "css": "internal:text=\"Accepted usernames are:blinq_userblinq_adminPassword for all users:let_me_in\"s >> xpath=..",
+        "score": 192,
+        "priority": 1
+      },
+      {
+        "css": "internal:text=\"Log InUsername *Password *\"i >> xpath=../.. >> div >> internal:has-text=\"Accepted usernames are:\"i",
+        "score": 468.25,
+        "priority": 2,
+        "index": 0
+      },
+      {
+        "css": "internal:text=\"Log InUsername *Password *\"i >> xpath=../.. >> div >> internal:has-text=\"Accepted usernames are:blinq_userblinq_adminPassword for all users:let_me_in\"i",
+        "score": 469.75,
+        "priority": 2,
+        "index": 0
+      }
+    ],
+    "text_with_index": [
+      {
+        "css": "internal:text=\"Log InUsername *Password *\"i >> xpath=../.. >> div >> internal:has-text=\"Accepted usernames are:\"i",
+        "score": 468.25,
+        "priority": 2,
+        "index": 0
+      },
+      {
+        "css": "internal:text=\"Log InUsername *Password *\"i >> xpath=../.. >> div >> internal:has-text=\"Accepted usernames are:blinq_userblinq_adminPassword for all users:let_me_in\"i",
+        "score": 469.75,
+        "priority": 2,
+        "index": 0
+      }
+    ],
+    "ignore_digit": [],
+    "no_text": [
+      {
+        "css": "internal:text=\"Accepted usernames are:\"i >> xpath=../..",
+        "score": 181,
+        "priority": 1
+      },
+      {
+        "css": "internal:text=\"Accepted usernames are:blinq_userblinq_adminPassword for all users:let_me_in\"i >> xpath=..",
+        "score": 187,
+        "priority": 1
+      },
+      {
+        "css": "internal:text=\"Accepted usernames are:blinq_userblinq_adminPassword for all users:let_me_in\"s >> xpath=..",
+        "score": 192,
+        "priority": 1
+      },
+      {
+        "css": "internal:text=\"Log InUsername *Password *\"i >> xpath=../.. >> div >> internal:has-text=\"Accepted usernames are:\"i",
+        "score": 468.25,
+        "priority": 2,
+        "index": 0
+      },
+      {
+        "css": "internal:text=\"Log InUsername *Password *\"i >> xpath=../.. >> div >> internal:has-text=\"Accepted usernames are:blinq_userblinq_adminPassword for all users:let_me_in\"i",
+        "score": 469.75,
+        "priority": 2,
+        "index": 0
+      }
+    ],
+    "strategy": "basic"
+  },
+  "text_accepted_usernames_are_blinq_userbl_1": {
+    "custom": [],
+    "context": [],
+    "basic": [
+      {
+        "css": "internal:text=\"Accepted usernames are:\"i >> xpath=../..",
+        "score": 181,
+        "priority": 1
+      },
+      {
+        "css": "internal:text=\"Accepted usernames are:blinq_userblinq_adminPassword for all users:let_me_in\"i >> xpath=..",
+        "score": 187,
+        "priority": 1
+      },
+      {
+        "css": "internal:text=\"Accepted usernames are:blinq_userblinq_adminPassword for all users:let_me_in\"s >> xpath=..",
+        "score": 192,
+        "priority": 1
+      },
+      {
+        "css": "internal:text=\"Log InUsername *Password *\"i >> xpath=../.. >> div >> internal:has-text=\"Accepted usernames are:\"i",
+        "score": 468.25,
+        "priority": 2,
+        "index": 0
+      },
+      {
+        "css": "internal:text=\"Log InUsername *Password *\"i >> xpath=../.. >> div >> internal:has-text=\"Accepted usernames are:blinq_userblinq_adminPassword for all users:let_me_in\"i",
+        "score": 469.75,
+        "priority": 2,
+        "index": 0
+      }
+    ],
+    "text_with_index": [
+      {
+        "css": "internal:text=\"Log InUsername *Password *\"i >> xpath=../.. >> div >> internal:has-text=\"Accepted usernames are:\"i",
+        "score": 468.25,
+        "priority": 2,
+        "index": 0
+      },
+      {
+        "css": "internal:text=\"Log InUsername *Password *\"i >> xpath=../.. >> div >> internal:has-text=\"Accepted usernames are:blinq_userblinq_adminPassword for all users:let_me_in\"i",
+        "score": 469.75,
+        "priority": 2,
+        "index": 0
+      }
+    ],
+    "ignore_digit": [],
+    "no_text": [
+      {
+        "css": "internal:text=\"Accepted usernames are:\"i >> xpath=../..",
+        "score": 181,
+        "priority": 1
+      },
+      {
+        "css": "internal:text=\"Accepted usernames are:blinq_userblinq_adminPassword for all users:let_me_in\"i >> xpath=..",
+        "score": 187,
+        "priority": 1
+      },
+      {
+        "css": "internal:text=\"Accepted usernames are:blinq_userblinq_adminPassword for all users:let_me_in\"s >> xpath=..",
+        "score": 192,
+        "priority": 1
+      },
+      {
+        "css": "internal:text=\"Log InUsername *Password *\"i >> xpath=../.. >> div >> internal:has-text=\"Accepted usernames are:\"i",
+        "score": 468.25,
+        "priority": 2,
+        "index": 0
+      },
+      {
+        "css": "internal:text=\"Log InUsername *Password *\"i >> xpath=../.. >> div >> internal:has-text=\"Accepted usernames are:blinq_userblinq_adminPassword for all users:let_me_in\"i",
+        "score": 469.75,
+        "priority": 2,
+        "index": 0
+      }
+    ],
+    "strategy": "basic"
   }
 }
