@@ -186,6 +186,7 @@ When("abc2", { timeout: 60000 }, abc2);
  */
 async function the_user_navigates_to_the_shop_now_page() {
   // source: recorder
+  //coment
   // implemented_at: 2026-02-02T08:18:57.632Z
   const _params = {};
   // Click on Shop NOW banner
