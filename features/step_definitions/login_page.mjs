@@ -153,6 +153,7 @@ When(
 async function the_user_parameterized_clicks_on_the_user_element_id(_user_element_id) {
   // source: recorder
   // implemented_at: 2025-12-10T10:34:54.550Z
+  //comment
   const _params = { _user_element_id };
   //  Parameterized click on <user_element_id>
   await context.web.click(elements["paragraph_blinq_user"], _params, null, this);
