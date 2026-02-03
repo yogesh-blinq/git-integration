@@ -414,5 +414,62 @@
       }
     ],
     "strategy": "basic"
+  },
+  "text_log_in": {
+    "custom": [],
+    "context": [],
+    "basic": [
+      {
+        "css": "internal:text=\"Log In\"i",
+        "score": 180,
+        "priority": 1
+      },
+      {
+        "css": "internal:text=\"Log In\"s",
+        "score": 185,
+        "priority": 1
+      },
+      {
+        "css": "div >> internal:has-text=/^Log In$/",
+        "score": 390.5,
+        "priority": 1
+      },
+      {
+        "css": "body >> div >> internal:has-text=\"Log In\"i",
+        "score": 510,
+        "priority": 2,
+        "index": 5
+      },
+      {
+        "css": "body >> div >> internal:has-text=\"Log In\"i",
+        "score": 510,
+        "priority": 2,
+        "index": 5
+      }
+    ],
+    "text_with_index": [
+      {
+        "css": "body >> div >> internal:has-text=\"Log In\"i",
+        "score": 510,
+        "priority": 2,
+        "index": 5
+      },
+      {
+        "css": "body >> div >> internal:has-text=\"Log In\"i",
+        "score": 510,
+        "priority": 2,
+        "index": 5
+      }
+    ],
+    "ignore_digit": [],
+    "no_text": [
+      {
+        "score": 715,
+        "css": "#root >> div",
+        "priority": 2,
+        "index": 6
+      }
+    ],
+    "strategy": "basic"
   }
 }

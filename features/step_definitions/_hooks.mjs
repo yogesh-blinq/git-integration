@@ -18,7 +18,7 @@ const elements = {};
 
 let context = null;
 Before(async function (scenario) {
-  context = await initContext(url, false, false, this, -1, null, null, scenario);
+  context = await initContext(url, false, false, this);
   await navigate(url);
   await context.web.beforeScenario(this, scenario);
 });

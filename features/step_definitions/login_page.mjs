@@ -104,6 +104,17 @@ const elements = {
     element_name: "Accepted usernames are:blinq_userblinq_adminPassword for all users:let_me_in Text",
     element_key: "text_accepted_usernames_are_blinq_userbl_1",
   },
+  text_log_in: {
+    locators: [
+      { css: 'internal:text="Log In"i', priority: 1 },
+      { css: 'internal:text="Log In"s', priority: 1 },
+      { css: "div >> internal:has-text=/^Log In$/", priority: 1 },
+      { css: 'body >> div >> internal:has-text="Log In"i', priority: 2, index: 5 },
+      { css: 'body >> div >> internal:has-text="Log In"i', priority: 2, index: 5 },
+    ],
+    element_name: "Log In Text",
+    element_key: "text_log_in",
+  },
 };
 
 /**
@@ -199,3 +210,22 @@ async function the_user_navigates_to_the_shop_now_page() {
 }
 
 Given("The user navigates to the Shop NOW page", { timeout: 180000 }, the_user_navigates_to_the_shop_now_page);
+
+/**
+ * The user navigates to the login page and clicks on Log In
+ * @recorder
+ * @path=/login
+ */
+async function the_user_navigates_to_the_login_page_and_clicks_on_log_in() {
+  // source: recorder
+  // implemented_at: 2026-02-03T06:43:48.629Z
+  const _params = {};
+  // Click on Log In Text
+  await context.web.click(elements["text_log_in"], _params, null, this);
+}
+
+When(
+  "The user navigates to the login page and clicks on Log In",
+  { timeout: 60000 },
+  the_user_navigates_to_the_login_page_and_clicks_on_log_in
+);
